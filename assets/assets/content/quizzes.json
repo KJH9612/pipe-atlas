@@ -841,5 +841,41 @@
     "options": ["급수전/밸브박스", "여과기", "비료 주입기", "스프링클러"],
     "answer": 0,
     "explanation": "자동관수는 구역밸브(솔레노이드)+컨트롤러로 순차 급수합니다."
+  },
+
+  {
+    "id": "re1", "domain": "refinery", "prompt": "연료를 태워 튜브 속 공정 유체(원유 등)를 고온 가열하는 노는?",
+    "asset": "assets/symbols/ref_fired_heater.svg",
+    "options": ["가열로(Fired Heater)", "리보일러", "공랭식 냉각기", "분리기"],
+    "answer": 0,
+    "explanation": "원유는 가열로에서 가열된 뒤 상압증류탑으로 들어갑니다."
+  },
+  {
+    "id": "re2", "domain": "refinery", "prompt": "원유를 끓는점 차이로 여러 유분으로 분리하는 다단 탑은?",
+    "asset": "assets/symbols/ref_column.svg",
+    "options": ["증류탑(CDU)", "가열로", "분리기", "플레어"],
+    "answer": 0,
+    "explanation": "위쪽=가벼운 유분(가스·나프타), 아래=무거운 유분(잔사유)."
+  },
+  {
+    "id": "re3", "domain": "refinery", "prompt": "비상·잉여 가스를 높은 굴뚝 끝에서 태워 안전 방출하는 설비는?",
+    "asset": "assets/symbols/ref_flare.svg",
+    "options": ["플레어 스택", "가열로", "증류탑", "리보일러"],
+    "answer": 0,
+    "explanation": "안전밸브(PSV) 방출 가스가 플레어 헤더로 모여 연소됩니다."
+  },
+  {
+    "id": "re4", "domain": "refinery", "prompt": "혼합 유체를 가스·액체·물로 분리하고 압축기 흡입을 보호하는 드럼은?",
+    "asset": "assets/symbols/ref_separator.svg",
+    "options": ["기액 분리기(녹아웃 드럼)", "증류탑", "가열로", "공랭식 냉각기"],
+    "answer": 0,
+    "explanation": "압축기 흡입 앞 녹아웃 드럼으로 액적을 제거해 손상을 막습니다."
+  },
+  {
+    "id": "re5", "domain": "refinery", "prompt": "냉각수 없이 팬으로 공기를 불어 공정 유체를 냉각·응축하는 것은?",
+    "asset": "assets/symbols/ref_air_cooler.svg",
+    "options": ["공랭식 냉각기(핀팬)", "리보일러", "가열로", "분리기"],
+    "answer": 0,
+    "explanation": "물이 귀한 부지에선 수랭 대신 공랭식(핀팬)을 씁니다."
   }
 ]
