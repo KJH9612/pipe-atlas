@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
+  <g fill="none" stroke="#111827" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="2" y1="38" x2="18" y2="38"/>
+    <line x1="82" y1="38" x2="98" y2="38"/>
+    <polygon points="18,24 18,52 50,38"/>
+    <polygon points="82,24 82,52 50,38"/>
+    <path d="M34,24 Q50,8 66,24"/>
+    <line x1="50" y1="24" x2="50" y2="38"/>
+    <rect x="42" y="4" width="16" height="8" rx="2"/>
+    <line x1="50" y1="12" x2="50" y2="24"/>
+  </g>
+</svg>

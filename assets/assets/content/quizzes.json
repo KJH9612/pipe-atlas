@@ -560,5 +560,214 @@
     "options": ["니들 밸브", "버터플라이 밸브", "3방 밸브", "용기"],
     "answer": 0,
     "explanation": "니들 밸브는 소유량 정밀 조절·격리에 적합해 계기 임펄스 라인에 흔합니다."
+  },
+
+  {
+    "id": "sh1", "domain": "ship", "prompt": "선체 밖 해수를 배 안으로 끌어들이는 함(그레이팅+선저밸브)은?",
+    "asset": "assets/symbols/ship_sea_chest.svg",
+    "options": ["시체스트", "빌지 웰", "오버보드", "사운딩관"],
+    "answer": 0,
+    "explanation": "시체스트는 해수 흡입구로, 보통 high/low 2개소를 둡니다."
+  },
+  {
+    "id": "sh2", "domain": "ship", "prompt": "파도·침수 시 플로트가 떠 자동으로 막히는 탱크 통기 말단은?",
+    "asset": "assets/symbols/ship_air_pipe_head.svg",
+    "options": ["공기관 헤드(구스넥)", "사운딩관", "시체스트", "빌지 웰"],
+    "answer": 0,
+    "explanation": "공기관 헤드는 통기하되 침수 시 플로트로 해수 유입을 막습니다."
+  },
+  {
+    "id": "sh3", "domain": "ship", "prompt": "수동 차단과 역류 방지를 겸하는 선체 관통용 밸브는?",
+    "asset": "assets/symbols/ship_storm_valve.svg",
+    "options": ["스톰 밸브(SDNR)", "게이트 밸브", "볼 밸브", "안전 밸브"],
+    "answer": 0,
+    "explanation": "SDNR은 스크류다운 논리턴 — 차단+역류방지 겸용입니다."
+  },
+  {
+    "id": "sh4", "domain": "ship", "prompt": "해수 이물질·해양생물을 거르며 이중화로 무정지 청소하는 것은?",
+    "asset": "assets/symbols/ship_sea_strainer.svg",
+    "options": ["해수 스트레이너", "시체스트", "빌지 웰", "공기관 헤드"],
+    "answer": 0,
+    "explanation": "해수 스트레이너는 막힘이 잦아 이중 설치로 하나 청소 중에도 운전합니다."
+  },
+  {
+    "id": "sh5", "domain": "ship", "prompt": "선저에 고인 물을 모아 빌지 펌프로 빼내는 집수정은?",
+    "asset": "assets/symbols/ship_bilge_well.svg",
+    "options": ["빌지 웰", "시체스트", "오버보드", "사운딩관"],
+    "answer": 0,
+    "explanation": "빌지수는 유수분리(15ppm) 후에만 선외 배출이 가능합니다."
+  },
+
+  {
+    "id": "se1", "domain": "semi", "prompt": "공정 가스의 질량유량을 측정+제어하는 정밀 계기는?",
+    "asset": "assets/symbols/semi_mfc.svg",
+    "options": ["MFC(질량유량제어기)", "레귤레이터", "진공 펌프", "필터"],
+    "answer": 0,
+    "explanation": "MFC는 유량계와 제어밸브를 한 몸에 통합한 정밀 기기입니다."
+  },
+  {
+    "id": "se2", "domain": "semi", "prompt": "독성·특수 가스 실린더를 누출감지·퍼지·배기와 함께 보관·공급하는 것은?",
+    "asset": "assets/symbols/semi_gas_cabinet.svg",
+    "options": ["가스 캐비닛", "진공 펌프", "MFC", "필터"],
+    "answer": 0,
+    "explanation": "가스 캐비닛→VMB→장비로 위험 가스가 안전하게 분배됩니다."
+  },
+  {
+    "id": "se3", "domain": "semi", "prompt": "증착·식각 챔버를 진공으로 배기하는 기기는?",
+    "asset": "assets/symbols/semi_vacuum_pump.svg",
+    "options": ["진공 펌프", "송풍기", "압축기", "레귤레이터"],
+    "answer": 0,
+    "explanation": "러핑펌프로 저진공 → 터보펌프로 고진공 단계 배기합니다."
+  },
+  {
+    "id": "se4", "domain": "semi", "prompt": "금속 격막으로 데드볼륨·오염을 최소화한 고순도 밸브는?",
+    "asset": "assets/symbols/semi_diaphragm_valve.svg",
+    "options": ["고순도 다이어프램 밸브", "볼 밸브", "게이트 밸브", "콕"],
+    "answer": 0,
+    "explanation": "반도체 가스 라인은 데드볼륨이 오염원이라 금속 격막 밸브를 씁니다."
+  },
+  {
+    "id": "se5", "domain": "semi", "prompt": "초순수(UPW)의 나노급 파티클을 사용점 직전에서 제거하는 것은?",
+    "asset": "assets/symbols/semi_filter.svg",
+    "options": ["초순수 필터(POU)", "MFC", "레귤레이터", "가스 캐비닛"],
+    "answer": 0,
+    "explanation": "반도체 수율은 파티클 관리가 핵심 — 사용점(POU) 필터가 중요합니다."
+  },
+
+  {
+    "id": "wa1", "domain": "water", "prompt": "수로·개거의 물길을 판을 올려 여닫는 대형 차단 장치는?",
+    "asset": "assets/symbols/water_sluice_gate.svg",
+    "options": ["제수변/수문", "맨홀", "침전지", "유량계"],
+    "answer": 0,
+    "explanation": "관로용 대형 게이트(제수변)와 개거용 수문을 통칭합니다."
+  },
+  {
+    "id": "wa2", "domain": "water", "prompt": "지하 관로의 점검·청소를 위해 사람이 드나드는 수직 구조물은?",
+    "asset": "assets/symbols/water_manhole.svg",
+    "options": ["맨홀", "침전지", "제수변", "취수펌프"],
+    "answer": 0,
+    "explanation": "관 방향 전환·합류·구배 변화점마다 맨홀을 둡니다(밀폐공간 안전 주의)."
+  },
+  {
+    "id": "wa3", "domain": "water", "prompt": "부유물을 중력으로 가라앉혀 상등수를 분리하는 것은?",
+    "asset": "assets/symbols/water_clarifier.svg",
+    "options": ["침전지(청징조)", "맨홀", "염소 소독", "유량계"],
+    "answer": 0,
+    "explanation": "정수 흐름: 응집→침전→여과→소독."
+  },
+  {
+    "id": "wa4", "domain": "water", "prompt": "정수에 주입해 병원성 미생물을 소독하고 잔류 소독력을 남기는 것은?",
+    "asset": "assets/symbols/water_chlorination.svg",
+    "options": ["염소 소독", "침전지", "제수변", "취수펌프"],
+    "answer": 0,
+    "explanation": "수돗물 냄새의 원인이 잔류염소(안전 기준 내)입니다."
+  },
+  {
+    "id": "wa5", "domain": "water", "prompt": "원수를 취수하거나 정수를 가압 이송하는 대유량 기기는?",
+    "asset": "assets/symbols/water_pump.svg",
+    "options": ["취수/가압 펌프", "제수변", "맨홀", "침전지"],
+    "answer": 0,
+    "explanation": "대구경 상수관은 수격 방지(서지탱크·완폐밸브)를 병행합니다."
+  },
+
+  {
+    "id": "ga1", "domain": "gas", "prompt": "도시가스의 높은 압력을 사용 압력으로 낮춰 일정하게 유지하는 것은?",
+    "asset": "assets/symbols/gas_governor.svg",
+    "options": ["정압기(거버너)", "가스 미터", "부취설비", "가스 필터"],
+    "answer": 0,
+    "explanation": "정압기에는 긴급차단(ESV/SSV)과 안전밸브가 세트로 붙습니다."
+  },
+  {
+    "id": "ga2", "domain": "gas", "prompt": "누출·화재 등 비상 시 가스 공급을 신속히 차단하는 밸브는?",
+    "asset": "assets/symbols/gas_esv.svg",
+    "options": ["긴급차단밸브(ESV)", "가스 미터", "가스 필터", "정압기"],
+    "answer": 0,
+    "explanation": "가스 사고 방지의 핵심 밸브로, 정기 작동 시험이 필수입니다."
+  },
+  {
+    "id": "ga3", "domain": "gas", "prompt": "사용한 가스량을 적산 계량하는 계기는?",
+    "asset": "assets/symbols/gas_meter.svg",
+    "options": ["가스 미터", "정압기", "부취설비", "안전밸브"],
+    "answer": 0,
+    "explanation": "최근 가스미터는 지진·과류 자동 차단 기능을 내장합니다."
+  },
+  {
+    "id": "ga4", "domain": "gas", "prompt": "무취인 천연가스에 냄새를 넣어 누출을 알 수 있게 하는 설비는?",
+    "asset": "assets/symbols/gas_odorizer.svg",
+    "options": ["부취설비(오도라이저)", "정압기", "가스 필터", "가스 미터"],
+    "answer": 0,
+    "explanation": "도시가스 특유의 냄새가 바로 이 부취제 때문입니다."
+  },
+  {
+    "id": "ga5", "domain": "gas", "prompt": "설정 압력 초과 시 열려 과압을 방출하는 가스 밸브는?",
+    "asset": "assets/symbols/gas_relief.svg",
+    "options": ["가스 안전밸브(릴리프)", "긴급차단밸브", "정압기", "가스 미터"],
+    "answer": 0,
+    "explanation": "정압기 고장 시 2차 과압을 릴리프가 대기로 방출합니다."
+  },
+
+  {
+    "id": "sa1", "domain": "sanitary", "prompt": "위생 배관에서 나사 대신 페룰+개스킷+클램프로 분해가 쉬운 이음은?",
+    "asset": "assets/symbols/san_tri_clamp.svg",
+    "options": ["트라이클램프", "유니언", "플랜지", "커플링"],
+    "answer": 0,
+    "explanation": "세척성 때문에 위생 배관은 트라이클램프로 잇습니다(데드존 최소)."
+  },
+  {
+    "id": "sa2", "domain": "sanitary", "prompt": "격막으로 유체를 완전히 격리해 무데드존인 제약 표준 밸브는?",
+    "asset": "assets/symbols/san_diaphragm.svg",
+    "options": ["위생 다이어프램 밸브", "볼 밸브", "게이트 밸브", "콕"],
+    "answer": 0,
+    "explanation": "제약 무균 라인의 표준 밸브가 위생 다이어프램입니다."
+  },
+  {
+    "id": "sa3", "domain": "sanitary", "prompt": "탱크 내부를 분해 없이 사방 분사로 자동 세척(CIP)하는 것은?",
+    "asset": "assets/symbols/san_spray_ball.svg",
+    "options": ["CIP 스프레이 볼", "위생 펌프", "사이트글래스", "트라이클램프"],
+    "answer": 0,
+    "explanation": "CIP = 제자리(Clean In Place) 세척. 스프레이 볼이 내부를 씻습니다."
+  },
+  {
+    "id": "sa4", "domain": "sanitary", "prompt": "데드존을 줄이고 CIP/SIP 세척이 쉬운 식품·제약용 밸브는?",
+    "asset": "assets/symbols/san_valve.svg",
+    "options": ["위생 밸브", "게이트 밸브", "체크 밸브", "콕"],
+    "answer": 0,
+    "explanation": "일반 밸브의 사각지대(데드존)가 위생 배관에선 오염원이 됩니다."
+  },
+  {
+    "id": "sa5", "domain": "sanitary", "prompt": "위생 라인의 흐름·이물을 트라이클램프로 접속해 눈으로 확인하는 것은?",
+    "asset": "assets/symbols/san_sight_glass.svg",
+    "options": ["위생 사이트글래스", "스프레이 볼", "위생 펌프", "위생 밸브"],
+    "answer": 0,
+    "explanation": "CIP 세척 후 잔여물 여부를 사이트글래스로 확인합니다."
+  },
+
+  {
+    "id": "pl1", "domain": "pid", "prompt": "교반기와 가열/냉각 자켓을 갖춰 원료를 반응시키는 용기는?",
+    "asset": "assets/symbols/pid_reactor.svg",
+    "options": ["반응기(리액터)", "용기/탱크", "열교환기", "컬럼"],
+    "answer": 0,
+    "explanation": "반응기는 자켓으로 발열/흡열 반응의 온도를 제어합니다."
+  },
+  {
+    "id": "pl2", "domain": "pid", "prompt": "분체·입상 고체를 저장하고 하부 원뿔로 배출하는 저장조는?",
+    "asset": "assets/symbols/pid_silo.svg",
+    "options": ["사일로/호퍼", "저장 탱크(콘루프)", "용기", "반응기"],
+    "answer": 0,
+    "explanation": "호퍼 하부 브릿징(막힘)·분진 폭발 안전 관리가 중요합니다."
+  },
+  {
+    "id": "pl3", "domain": "pid", "prompt": "구동 유체를 노즐로 분사해 다른 유체를 빨아들이는 무가동부 장치는?",
+    "asset": "assets/symbols/pid_ejector.svg",
+    "options": ["이젝터(제트 펌프)", "원심 펌프", "압축기", "송풍기"],
+    "answer": 0,
+    "explanation": "증기 이젝터는 진공 형성에 널리 쓰입니다(가동부 없음)."
+  },
+  {
+    "id": "pl4", "domain": "pid", "prompt": "증기·유틸리티를 여러 사용처로 나눠 보내는 굵은 분배관은?",
+    "asset": "assets/symbols/pid_steam_header.svg",
+    "options": ["증기 헤더(분배관)", "리듀서", "용기", "열교환기"],
+    "answer": 0,
+    "explanation": "증기 헤더 말단엔 반드시 스팀트랩으로 응축수를 배출합니다."
   }
 ]
