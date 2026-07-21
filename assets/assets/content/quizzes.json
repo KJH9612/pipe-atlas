@@ -769,5 +769,77 @@
     "options": ["증기 헤더(분배관)", "리듀서", "용기", "열교환기"],
     "answer": 0,
     "explanation": "증기 헤더 말단엔 반드시 스팀트랩으로 응축수를 배출합니다."
+  },
+
+  {
+    "id": "nu1", "domain": "nuclear", "prompt": "노심에서 발생한 열을 1차 냉각재로 전달하는 압력용기는?",
+    "asset": "assets/symbols/nuc_reactor.svg",
+    "options": ["원자로(RV)", "증기발생기", "가압기", "냉각재펌프"],
+    "answer": 0,
+    "explanation": "원자로→증기발생기→터빈으로 열이 전달됩니다(가압경수로 PWR)."
+  },
+  {
+    "id": "nu2", "domain": "nuclear", "prompt": "1차 냉각재의 열로 2차측 물을 끓여 증기를 만들며 1·2차를 분리하는 것은?",
+    "asset": "assets/symbols/nuc_steam_generator.svg",
+    "options": ["증기발생기(SG)", "가압기", "원자로", "냉각탑"],
+    "answer": 0,
+    "explanation": "SG 전열관 누설(1차→2차)은 원자력 안전의 핵심 감시 항목입니다."
+  },
+  {
+    "id": "nu3", "domain": "nuclear", "prompt": "히터와 살수로 1차 계통 압력을 일정하게 유지하는 용기는?",
+    "asset": "assets/symbols/nuc_pressurizer.svg",
+    "options": ["가압기(PZR)", "증기발생기", "원자로", "펌프"],
+    "answer": 0,
+    "explanation": "히터=승압, 살수=감압으로 1차 압력을 조절합니다."
+  },
+  {
+    "id": "nu4", "domain": "nuclear", "prompt": "사고 시 격납건물 관통 배관을 자동 차단해 방사능 유출을 막는 밸브는?",
+    "asset": "assets/symbols/nuc_isolation_valve.svg",
+    "options": ["격납 격리밸브(CIV)", "안전방출밸브", "게이트 밸브", "체크 밸브"],
+    "answer": 0,
+    "explanation": "격납 경계를 관통하는 배관엔 안팎 2개의 격리밸브를 둡니다."
+  },
+  {
+    "id": "nu5", "domain": "nuclear", "prompt": "1차 냉각재를 원자로↔증기발생기로 순환시키는 대형 펌프는?",
+    "asset": "assets/symbols/nuc_rcp.svg",
+    "options": ["원자로냉각재펌프(RCP)", "가압기", "증기발생기", "격리밸브"],
+    "answer": 0,
+    "explanation": "정전 시에도 관성차륜으로 잠시 순환을 유지해 노심을 보호합니다."
+  },
+
+  {
+    "id": "ag1", "domain": "agri", "prompt": "뿌리 근처에 물을 방울로 천천히 공급하는 절수형 관수는?",
+    "asset": "assets/symbols/agri_drip.svg",
+    "options": ["점적 관수(드립)", "스프링클러", "급수전", "양수펌프"],
+    "answer": 0,
+    "explanation": "점적 관수 앞엔 반드시 여과기를 둬 드리퍼 막힘을 막습니다."
+  },
+  {
+    "id": "ag2", "domain": "agri", "prompt": "회전하며 물을 넓게 뿌리는 농업용 살수기는?",
+    "asset": "assets/symbols/agri_sprinkler.svg",
+    "options": ["농업용 스프링클러", "점적 드리퍼", "비료 주입기", "여과기"],
+    "answer": 0,
+    "explanation": "살수 반경이 겹치도록 배치해 균등도를 확보합니다."
+  },
+  {
+    "id": "ag3", "domain": "agri", "prompt": "관개수의 모래·유기물을 걸러 드리퍼·노즐 막힘을 막는 것은?",
+    "asset": "assets/symbols/agri_filter.svg",
+    "options": ["관개 여과기", "급수전", "양수펌프", "스프링클러"],
+    "answer": 0,
+    "explanation": "점적 관수의 성패는 여과 관리에 달렸습니다."
+  },
+  {
+    "id": "ag4", "domain": "agri", "prompt": "관개수에 액체 비료를 섞어 함께 공급하는 장치(관비)는?",
+    "asset": "assets/symbols/agri_fertilizer_injector.svg",
+    "options": ["비료 주입기", "여과기", "급수전", "양수펌프"],
+    "answer": 0,
+    "explanation": "관비는 반드시 역류 방지기로 상수원 오염을 막습니다."
+  },
+  {
+    "id": "ag5", "domain": "agri", "prompt": "관개 구역별로 물을 공급·차단하는(밸브박스 수용) 것은?",
+    "asset": "assets/symbols/agri_hydrant.svg",
+    "options": ["급수전/밸브박스", "여과기", "비료 주입기", "스프링클러"],
+    "answer": 0,
+    "explanation": "자동관수는 구역밸브(솔레노이드)+컨트롤러로 순차 급수합니다."
   }
 ]
