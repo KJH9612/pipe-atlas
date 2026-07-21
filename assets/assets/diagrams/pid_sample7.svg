@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect x="0" y="0" width="400" height="300" fill="#ffffff"/>
+  <g fill="none" stroke="#111827" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 공정 라인 -->
+    <line x1="30" y1="180" x2="370" y2="180"/>
+    <polygon points="104,174 104,186 116,180" fill="#111827" stroke="none"/>
+    <polygon points="330,174 330,186 342,180" fill="#111827" stroke="none"/>
+
+    <!-- 펌프 -->
+    <circle cx="75" cy="180" r="14"/>
+    <line x1="75" y1="166" x2="91" y2="166"/>
+    <line x1="91" y1="166" x2="91" y2="159"/>
+
+    <!-- 3방 밸브 (열교환기/바이패스 분배) -->
+    <polygon points="148,170 148,190 160,180"/>
+    <polygon points="172,170 172,190 160,180"/>
+    <line x1="160" y1="180" x2="160" y2="110"/>
+    <polygon points="150,168 170,168 160,156"/>
+
+    <!-- 열교환기 경로 -->
+    <line x1="160" y1="110" x2="240" y2="110"/>
+    <rect x="240" y="92" width="60" height="36"/>
+    <path d="M240,110 Q255,92 270,110 T300,110"/>
+    <line x1="300" y1="110" x2="300" y2="180"/>
+    <polygon points="194,104 194,116 206,110" fill="#111827" stroke="none"/>
+
+    <!-- 온도 계기(TIC) + 제어 신호 -->
+    <circle cx="335" cy="88" r="18"/>
+    <line x1="317" y1="88" x2="353" y2="88"/>
+    <text x="335" y="84" font-size="11" fill="#111827" stroke="none" text-anchor="middle">TIC</text>
+    <line x1="335" y1="106" x2="335" y2="240" stroke-dasharray="4 4" stroke-width="2"/>
+    <line x1="335" y1="240" x2="160" y2="240" stroke-dasharray="4 4" stroke-width="2"/>
+    <line x1="160" y1="240" x2="160" y2="192" stroke-dasharray="4 4" stroke-width="2"/>
+  </g>
+</svg>

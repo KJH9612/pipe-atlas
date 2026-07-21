@@ -1,0 +1,497 @@
+[
+  {
+    "id": "bld_sample1",
+    "domain": "building",
+    "title": "세대 급수 계통 예시",
+    "asset": "assets/diagrams/bld_sample1.svg",
+    "description": "급수원에서 물이 차단 밸브 → 여과 → 가압 → 역류 방지를 거쳐 공급되는 기본 흐름입니다.",
+    "hotspots": [
+      { "x": 0.15, "y": 0.42, "w": 0.10, "h": 0.16, "symbolId": "bld_gate_valve", "note": "급수 본관을 열고 닫는 차단 밸브입니다." },
+      { "x": 0.33, "y": 0.42, "w": 0.10, "h": 0.16, "symbolId": "bld_strainer", "note": "펌프로 이물질이 들어가지 않도록 걸러줍니다." },
+      { "x": 0.55, "y": 0.36, "w": 0.15, "h": 0.24, "symbolId": "bld_pump", "note": "물을 상층부로 밀어 올리는 가압 펌프입니다." },
+      { "x": 0.77, "y": 0.42, "w": 0.12, "h": 0.16, "symbolId": "bld_check_valve", "note": "펌프 정지 시 물이 역류하지 않게 막습니다." }
+    ],
+    "steps": [
+      { "text": "급수원에서 물이 들어와 게이트 밸브로 계통을 열고 닫습니다.", "hotspot": 0 },
+      { "text": "스트레이너가 이물질을 걸러 펌프를 보호합니다.", "hotspot": 1 },
+      { "text": "펌프가 물을 상층부로 밀어 올립니다(가압).", "hotspot": 2 },
+      { "text": "체크 밸브가 펌프 정지 시 물의 역류를 막습니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "bld_sample2",
+    "domain": "building",
+    "title": "세면기 배수 계통 예시",
+    "asset": "assets/diagrams/bld_sample2.svg",
+    "description": "세면기에서 나온 배수가 P 트랩을 거쳐 배수 본관으로 흐르고, 바닥 배수구도 같은 본관에 연결되는 구성입니다.",
+    "hotspots": [
+      { "x": 0.16, "y": 0.02, "w": 0.17, "h": 0.22, "symbolId": "bld_faucet", "note": "세면기에 물을 공급하는 급수전입니다." },
+      { "x": 0.22, "y": 0.40, "w": 0.18, "h": 0.24, "symbolId": "bld_p_trap", "note": "봉수로 하수 냄새를 막는 P 트랩입니다." },
+      { "x": 0.57, "y": 0.61, "w": 0.15, "h": 0.23, "symbolId": "bld_floor_drain", "note": "바닥 물을 모아 배수하는 바닥 배수구(FD)입니다." },
+      { "x": 0.33, "y": 0.78, "w": 0.12, "h": 0.17, "symbolId": "bld_tee", "note": "여러 배수가 배수 본관으로 합쳐지는 분기점입니다." }
+    ],
+    "steps": [
+      { "text": "급수전으로 세면기에 물을 공급합니다.", "hotspot": 0 },
+      { "text": "사용한 물은 P 트랩을 지나며, 고인 봉수가 하수 악취를 막습니다.", "hotspot": 1 },
+      { "text": "바닥의 물은 바닥 배수구(FD)로 모입니다.", "hotspot": 2 },
+      { "text": "여러 배수가 배수 본관으로 합쳐져 하수로 나갑니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "bld_sample3",
+    "domain": "building",
+    "title": "옥상 물탱크 가압 급수 계통 예시",
+    "asset": "assets/diagrams/bld_sample3.svg",
+    "description": "저수조의 물을 펌프로 가압해 입상관으로 올리고, 감압 밸브로 층별 압력을 낮춰 공급하는 구성입니다.",
+    "hotspots": [
+      { "x": 0.26, "y": 0.62, "w": 0.10, "h": 0.16, "symbolId": "bld_gate_valve", "note": "펌프 흡입측을 여닫는 차단 밸브입니다." },
+      { "x": 0.36, "y": 0.60, "w": 0.13, "h": 0.20, "symbolId": "bld_pump", "note": "물을 입상관 위로 밀어 올리는 가압 펌프입니다." },
+      { "x": 0.49, "y": 0.62, "w": 0.10, "h": 0.16, "symbolId": "bld_check_valve", "note": "펌프 정지 시 역류를 막는 체크 밸브입니다." },
+      { "x": 0.60, "y": 0.30, "w": 0.15, "h": 0.20, "symbolId": "bld_prv", "note": "과도한 급수 압력을 낮춰 유지하는 감압 밸브입니다." },
+      { "x": 0.71, "y": 0.46, "w": 0.13, "h": 0.18, "symbolId": "bld_pressure_gauge", "note": "감압된 2차측 압력을 확인하는 압력계입니다." }
+    ],
+    "steps": [
+      { "text": "저수조 물이 게이트 밸브를 지나 펌프로 흡입됩니다.", "hotspot": 0 },
+      { "text": "펌프가 물을 입상관 위로 가압해 올립니다.", "hotspot": 1 },
+      { "text": "체크 밸브가 펌프 정지 시 역류를 막습니다.", "hotspot": 2 },
+      { "text": "감압 밸브가 과도한 압력을 층별 적정 압력으로 낮춥니다.", "hotspot": 3 },
+      { "text": "압력계로 감압된 2차측 압력을 확인합니다.", "hotspot": 4 }
+    ]
+  },
+  {
+    "id": "bld_sample4",
+    "domain": "building",
+    "title": "급탕(온수) 순환 계통 예시",
+    "asset": "assets/diagrams/bld_sample4.svg",
+    "description": "온수 탱크에서 데운 물을 급탕관으로 보내고, 순환 펌프로 환탕시켜 항상 더운물이 나오게 하는 구성입니다.",
+    "hotspots": [
+      { "x": 0.11, "y": 0.10, "w": 0.16, "h": 0.22, "symbolId": "bld_relief_valve", "note": "과압·과열 시 압력을 배출하는 안전 밸브입니다." },
+      { "x": 0.29, "y": 0.34, "w": 0.12, "h": 0.24, "symbolId": "bld_thermometer", "note": "급탕 온도를 확인하는 온도계입니다." },
+      { "x": 0.34, "y": 0.75, "w": 0.10, "h": 0.16, "symbolId": "bld_gate_valve", "note": "순환 배관을 여닫는 차단 밸브입니다." },
+      { "x": 0.48, "y": 0.74, "w": 0.13, "h": 0.18, "symbolId": "bld_pump", "note": "물을 순환시키는 급탕 순환 펌프입니다." }
+    ],
+    "steps": [
+      { "text": "온수 탱크 상부의 안전 밸브가 과압·과열 시 압력을 배출합니다.", "hotspot": 0 },
+      { "text": "온도계로 급탕 온도를 확인합니다.", "hotspot": 1 },
+      { "text": "환탕(순환) 배관의 게이트 밸브로 계통을 제어합니다.", "hotspot": 2 },
+      { "text": "순환 펌프가 물을 계속 돌려 항상 더운물이 나오게 합니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "bld_sample5",
+    "domain": "building",
+    "title": "배관 이음쇠 상세 예시",
+    "asset": "assets/diagrams/bld_sample5.svg",
+    "description": "한 배관 라인에서 자주 만나는 이음쇠·밸브들의 위치와 역할을 한눈에 익히는 예시입니다.",
+    "hotspots": [
+      { "x": 0.15, "y": 0.42, "w": 0.10, "h": 0.16, "symbolId": "bld_gate_valve", "note": "유로를 여닫는 게이트 밸브입니다." },
+      { "x": 0.29, "y": 0.40, "w": 0.09, "h": 0.18, "symbolId": "bld_flange", "note": "볼트로 배관을 잇는 플랜지 연결부입니다." },
+      { "x": 0.43, "y": 0.42, "w": 0.10, "h": 0.16, "symbolId": "bld_tee", "note": "배관을 세 방향으로 나누는 티입니다." },
+      { "x": 0.46, "y": 0.18, "w": 0.13, "h": 0.18, "symbolId": "bld_elbow_90", "note": "분기관의 방향을 90°로 꺾는 엘보입니다." },
+      { "x": 0.57, "y": 0.42, "w": 0.11, "h": 0.16, "symbolId": "bld_reducer", "note": "관경을 줄이는 리듀서입니다." },
+      { "x": 0.74, "y": 0.42, "w": 0.10, "h": 0.16, "symbolId": "bld_union", "note": "분해·재결합이 쉬운 유니언입니다." }
+    ],
+    "steps": [
+      { "text": "게이트 밸브로 배관을 여닫습니다.", "hotspot": 0 },
+      { "text": "플랜지로 대구경 배관을 볼트 체결해 잇습니다.", "hotspot": 1 },
+      { "text": "티에서 배관이 세 방향으로 분기됩니다.", "hotspot": 2 },
+      { "text": "분기관은 엘보로 방향을 90° 바꿉니다.", "hotspot": 3 },
+      { "text": "리듀서로 관경을 줄입니다.", "hotspot": 4 },
+      { "text": "유니언으로 분해가 쉬운 연결부를 만듭니다.", "hotspot": 5 }
+    ]
+  },
+  {
+    "id": "bld_sample6",
+    "domain": "building",
+    "title": "감압 계통 상세 예시",
+    "asset": "assets/diagrams/bld_sample6.svg",
+    "description": "1차(고압)에서 스트레이너·감압 밸브를 거쳐 2차(저압)로 낮추고, 전후 압력계와 안전 밸브로 관리하는 구성입니다.",
+    "hotspots": [
+      { "x": 0.10, "y": 0.46, "w": 0.10, "h": 0.16, "symbolId": "bld_gate_valve", "note": "감압부 앞단을 차단하는 게이트 밸브입니다." },
+      { "x": 0.22, "y": 0.48, "w": 0.13, "h": 0.18, "symbolId": "bld_strainer", "note": "감압 밸브를 보호하기 위해 이물질을 거르는 스트레이너입니다." },
+      { "x": 0.31, "y": 0.28, "w": 0.13, "h": 0.18, "symbolId": "bld_pressure_gauge", "note": "감압 전 1차측 압력을 확인합니다." },
+      { "x": 0.47, "y": 0.40, "w": 0.14, "h": 0.18, "symbolId": "bld_prv", "note": "고압을 설정 압력으로 낮추는 감압 밸브입니다." },
+      { "x": 0.61, "y": 0.28, "w": 0.13, "h": 0.18, "symbolId": "bld_pressure_gauge", "note": "감압 후 2차측 압력을 확인합니다." },
+      { "x": 0.75, "y": 0.38, "w": 0.13, "h": 0.20, "symbolId": "bld_relief_valve", "note": "2차측 과압 시 압력을 배출하는 안전 밸브입니다." }
+    ],
+    "steps": [
+      { "text": "게이트 밸브로 감압부 앞단을 차단할 수 있습니다.", "hotspot": 0 },
+      { "text": "스트레이너가 이물질을 걸러 감압 밸브를 보호합니다.", "hotspot": 1 },
+      { "text": "1차 압력계로 감압 전 고압을 확인합니다.", "hotspot": 2 },
+      { "text": "감압 밸브가 고압을 설정 압력으로 낮춥니다.", "hotspot": 3 },
+      { "text": "2차 압력계로 감압 후 저압을 확인합니다.", "hotspot": 4 },
+      { "text": "안전 밸브가 2차측 과압 시 압력을 배출합니다.", "hotspot": 5 }
+    ]
+  },
+  {
+    "id": "bld_sample7",
+    "domain": "building",
+    "title": "저수조–고가수조 급수 계통",
+    "asset": "assets/diagrams/bld_sample7.svg",
+    "description": "지하 저수조의 물을 펌프로 옥상 고가수조까지 올린 뒤, 중력으로 각 세대에 급수하는 전형적인 방식입니다.",
+    "hotspots": [
+      { "x": 0.05, "y": 0.60, "w": 0.16, "h": 0.24, "symbolId": "bld_water_tank", "note": "물을 저장하는 지하 저수조입니다." },
+      { "x": 0.19, "y": 0.62, "w": 0.12, "h": 0.20, "symbolId": "bld_foot_valve", "note": "흡입관 말단에서 마중물이 빠지지 않게 하는 풋 밸브입니다." },
+      { "x": 0.35, "y": 0.60, "w": 0.13, "h": 0.22, "symbolId": "bld_pump", "note": "물을 옥상으로 밀어 올리는 양수 펌프입니다." },
+      { "x": 0.49, "y": 0.62, "w": 0.11, "h": 0.18, "symbolId": "bld_check_valve", "note": "펌프 정지 시 역류를 막는 체크 밸브입니다." },
+      { "x": 0.62, "y": 0.10, "w": 0.22, "h": 0.20, "symbolId": "bld_water_tank", "note": "물을 저장했다가 중력으로 급수하는 옥상 고가수조입니다." }
+    ],
+    "steps": [
+      { "text": "지하 저수조에 물을 저장합니다.", "hotspot": 0 },
+      { "text": "풋 밸브가 흡입관의 마중물을 유지해 펌프 재기동을 돕습니다.", "hotspot": 1 },
+      { "text": "펌프가 물을 옥상까지 가압해 올립니다.", "hotspot": 2 },
+      { "text": "체크 밸브가 펌프 정지 시 역류를 막습니다.", "hotspot": 3 },
+      { "text": "고가수조에 저장한 뒤 중력으로 각 세대에 급수합니다.", "hotspot": 4 }
+    ]
+  },
+  {
+    "id": "bld_sample8",
+    "domain": "building",
+    "title": "위생기구 배수 계통",
+    "asset": "assets/diagrams/bld_sample8.svg",
+    "description": "대변기·세면기의 배수가 트랩의 봉수로 악취를 막으며 배수 본관으로 합류하고, 청소구로 막힘을 관리하는 구성입니다.",
+    "hotspots": [
+      { "x": 0.05, "y": 0.05, "w": 0.22, "h": 0.28, "symbolId": "bld_water_closet", "note": "트랩이 내장된 대변기입니다." },
+      { "x": 0.35, "y": 0.06, "w": 0.22, "h": 0.18, "symbolId": "bld_lavatory", "note": "손·얼굴을 씻는 세면기입니다." },
+      { "x": 0.40, "y": 0.38, "w": 0.18, "h": 0.26, "symbolId": "bld_p_trap", "note": "세면기 배수의 봉수로 악취를 막는 P 트랩입니다." },
+      { "x": 0.72, "y": 0.66, "w": 0.13, "h": 0.24, "symbolId": "bld_cleanout", "note": "배수관 막힘을 청소하는 청소구(CO)입니다." }
+    ],
+    "steps": [
+      { "text": "대변기는 트랩이 내장되어 봉수로 하수 악취를 막습니다.", "hotspot": 0 },
+      { "text": "세면기로 물을 받아 사용합니다.", "hotspot": 1 },
+      { "text": "세면기 배수는 P 트랩을 지나며 봉수가 악취를 차단합니다.", "hotspot": 2 },
+      { "text": "배수는 본관으로 합류하고, 청소구로 막힘을 청소합니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "bld_sample9",
+    "domain": "building",
+    "title": "난방 순환·밸런싱 계통",
+    "asset": "assets/diagrams/bld_sample9.svg",
+    "description": "열원의 온수를 순환 펌프로 돌리고, 3방 혼합 밸브로 공급 온도를, 밸런싱 밸브로 계통별 유량을 조절하며 팽창 탱크가 열팽창을 흡수합니다.",
+    "hotspots": [
+      { "x": 0.21, "y": 0.12, "w": 0.13, "h": 0.20, "symbolId": "bld_pump", "note": "온수를 계통에 순환시키는 순환 펌프입니다." },
+      { "x": 0.43, "y": 0.12, "w": 0.14, "h": 0.20, "symbolId": "bld_three_way_valve", "note": "환수 일부를 섞어 공급 온도를 조절하는 3방 혼합 밸브입니다." },
+      { "x": 0.67, "y": 0.11, "w": 0.13, "h": 0.22, "symbolId": "bld_balancing_valve", "note": "계통별 유량을 설계값으로 균등 배분하는 밸런싱 밸브입니다." },
+      { "x": 0.15, "y": 0.75, "w": 0.16, "h": 0.20, "symbolId": "bld_expansion_tank", "note": "온수 팽창을 흡수해 과압을 막는 팽창 탱크입니다." }
+    ],
+    "steps": [
+      { "text": "순환 펌프가 열원의 온수를 계통으로 순환시킵니다.", "hotspot": 0 },
+      { "text": "3방 혼합 밸브가 환수를 섞어 공급 온도를 맞춥니다.", "hotspot": 1 },
+      { "text": "밸런싱 밸브가 각 계통의 유량을 균등하게 배분합니다.", "hotspot": 2 },
+      { "text": "팽창 탱크가 데워진 물의 부피 증가를 흡수합니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "bld_sample10",
+    "domain": "building",
+    "title": "저수조 자동 급수 계통",
+    "asset": "assets/diagrams/bld_sample10.svg",
+    "description": "상수도 인입을 전동 밸브로 원격 차단하고, 저수조의 볼탭(플로트 밸브)이 만수위에서 자동으로 급수를 멈춰 수위를 유지합니다.",
+    "hotspots": [
+      { "x": 0.13, "y": 0.30, "w": 0.14, "h": 0.22, "symbolId": "bld_motor_valve", "note": "상수도 인입을 원격으로 여닫는 전동 밸브입니다." },
+      { "x": 0.38, "y": 0.32, "w": 0.16, "h": 0.20, "symbolId": "bld_float_valve", "note": "수위에 따라 자동으로 급수를 여닫는 볼탭(플로트 밸브)입니다." },
+      { "x": 0.40, "y": 0.55, "w": 0.28, "h": 0.24, "symbolId": "bld_water_tank", "note": "물을 저장하는 저수조입니다." }
+    ],
+    "steps": [
+      { "text": "상수도가 인입되어 전동 밸브로 원격 차단할 수 있습니다.", "hotspot": 0 },
+      { "text": "저수조로 급수되며, 볼탭이 만수위에서 자동으로 잠깁니다.", "hotspot": 1 },
+      { "text": "저수조에 저장된 물을 계통으로 공급합니다.", "hotspot": 2 }
+    ]
+  },
+  {
+    "id": "pid_sample1",
+    "domain": "pid",
+    "title": "공정 이송 계통 (P&ID) 예시",
+    "asset": "assets/diagrams/pid_sample1.svg",
+    "description": "탱크의 액체를 펌프로 이송하고, 컨트롤 밸브가 계기 신호로 유량을 자동 조절하는 구성입니다.",
+    "hotspots": [
+      { "x": 0.09, "y": 0.38, "w": 0.14, "h": 0.32, "symbolId": "pid_vessel", "note": "액체를 저장하는 용기(탱크)입니다." },
+      { "x": 0.36, "y": 0.50, "w": 0.14, "h": 0.22, "symbolId": "pid_centrifugal_pump", "note": "탱크의 액체를 흡입해 이송하는 원심 펌프입니다." },
+      { "x": 0.60, "y": 0.50, "w": 0.14, "h": 0.22, "symbolId": "pid_control_valve", "note": "계기 신호를 받아 유량을 자동 조절합니다." },
+      { "x": 0.60, "y": 0.27, "w": 0.14, "h": 0.20, "symbolId": "pid_instrument", "note": "측정값으로 컨트롤 밸브를 제어하는 계기입니다." }
+    ],
+    "steps": [
+      { "text": "탱크(용기)에 저장된 액체가 출발점입니다.", "hotspot": 0 },
+      { "text": "원심 펌프가 액체를 흡입해 이송합니다.", "hotspot": 1 },
+      { "text": "계기가 유량을 측정해 제어 신호를 보냅니다.", "hotspot": 3 },
+      { "text": "컨트롤 밸브가 신호에 따라 유량을 자동 조절합니다.", "hotspot": 2 }
+    ]
+  },
+  {
+    "id": "pid_sample2",
+    "domain": "pid",
+    "title": "유량 제어 루프 (FIC) 예시",
+    "asset": "assets/diagrams/pid_sample2.svg",
+    "description": "펌프로 이송하는 유체의 유량을 계기(FIC)가 측정하고 컨트롤 밸브가 자동 조절하는 기본 제어 루프입니다.",
+    "hotspots": [
+      { "x": 0.09, "y": 0.51, "w": 0.11, "h": 0.18, "symbolId": "pid_gate_valve", "note": "라인을 수동 차단하는 게이트 밸브입니다." },
+      { "x": 0.28, "y": 0.50, "w": 0.13, "h": 0.20, "symbolId": "pid_centrifugal_pump", "note": "유체를 이송하는 원심 펌프입니다." },
+      { "x": 0.56, "y": 0.50, "w": 0.13, "h": 0.20, "symbolId": "pid_control_valve", "note": "계기 신호로 유량을 자동 조절합니다." },
+      { "x": 0.56, "y": 0.19, "w": 0.13, "h": 0.22, "symbolId": "pid_instrument", "note": "유량을 측정·제어하는 계기(FIC)입니다." }
+    ],
+    "steps": [
+      { "text": "게이트 밸브로 라인을 차단할 수 있습니다.", "hotspot": 0 },
+      { "text": "펌프가 유체를 이송합니다.", "hotspot": 1 },
+      { "text": "유량계기(FIC)가 흐름을 측정합니다.", "hotspot": 3 },
+      { "text": "컨트롤 밸브가 계기 신호로 유량을 자동 조절합니다.", "hotspot": 2 }
+    ]
+  },
+  {
+    "id": "pid_sample3",
+    "domain": "pid",
+    "title": "열교환기 냉각 계통 (온도 제어)",
+    "asset": "assets/diagrams/pid_sample3.svg",
+    "description": "펌프로 보낸 고온 유체를 열교환기에서 냉각수로 식히고, 온도계기(TIC)가 냉각수량 조절 밸브를 제어합니다.",
+    "hotspots": [
+      { "x": 0.16, "y": 0.40, "w": 0.13, "h": 0.20, "symbolId": "pid_centrifugal_pump", "note": "피가열 유체를 이송하는 펌프입니다." },
+      { "x": 0.40, "y": 0.42, "w": 0.20, "h": 0.16, "symbolId": "pid_heat_exchanger", "note": "냉각수와 열을 교환해 온도를 낮춥니다." },
+      { "x": 0.29, "y": 0.68, "w": 0.13, "h": 0.22, "symbolId": "pid_control_valve", "note": "냉각수량을 조절하는 컨트롤 밸브입니다." },
+      { "x": 0.68, "y": 0.16, "w": 0.14, "h": 0.22, "symbolId": "pid_instrument", "note": "출구 온도를 감지·제어하는 계기(TIC)입니다." }
+    ],
+    "steps": [
+      { "text": "펌프가 피가열(고온) 유체를 열교환기로 보냅니다.", "hotspot": 0 },
+      { "text": "열교환기에서 냉각수와 열을 주고받아 온도가 내려갑니다.", "hotspot": 1 },
+      { "text": "온도계기(TIC)가 출구 온도를 감지합니다.", "hotspot": 3 },
+      { "text": "컨트롤 밸브가 냉각수량을 조절해 목표 온도를 맞춥니다.", "hotspot": 2 }
+    ]
+  },
+  {
+    "id": "pid_sample4",
+    "domain": "pid",
+    "title": "증류탑(컬럼) 계통 예시 (심화)",
+    "asset": "assets/diagrams/pid_sample4.svg",
+    "description": "원료를 컬럼에서 끓여 성분을 분리하고, 탑정 증기를 응축기→환류 드럼→환류 펌프로 순환시키는 분리 공정입니다.",
+    "hotspots": [
+      { "x": 0.14, "y": 0.13, "w": 0.13, "h": 0.68, "symbolId": "pid_column", "note": "기·액 접촉으로 성분을 분리하는 증류탑입니다." },
+      { "x": 0.44, "y": 0.03, "w": 0.16, "h": 0.14, "symbolId": "pid_heat_exchanger", "note": "탑정 증기를 식혀 액화하는 응축기입니다." },
+      { "x": 0.45, "y": 0.21, "w": 0.15, "h": 0.14, "symbolId": "pid_vessel", "note": "응축액을 모으는 환류 드럼입니다." },
+      { "x": 0.46, "y": 0.36, "w": 0.13, "h": 0.18, "symbolId": "pid_centrifugal_pump", "note": "일부를 컬럼으로 되돌리고(환류) 일부는 제품으로 보내는 펌프입니다." }
+    ],
+    "steps": [
+      { "text": "원료(feed)가 컬럼 중단으로 공급됩니다.", "hotspot": 0 },
+      { "text": "탑정 증기가 응축기에서 액화됩니다.", "hotspot": 1 },
+      { "text": "응축액은 환류 드럼에 모입니다.", "hotspot": 2 },
+      { "text": "환류 펌프가 일부는 컬럼으로 되돌리고 일부는 제품으로 보냅니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "pid_sample5",
+    "domain": "pid",
+    "title": "증기 가열 열교환기 계통",
+    "asset": "assets/diagrams/pid_sample5.svg",
+    "description": "증기로 공정 유체를 가열하고, 생긴 응축수는 스팀 트랩으로 배출하며 사이트글래스로 증기 누설을 확인합니다.",
+    "hotspots": [
+      { "x": 0.43, "y": 0.24, "w": 0.14, "h": 0.20, "symbolId": "pid_control_valve", "note": "증기량을 조절해 가열 온도를 제어하는 컨트롤 밸브입니다." },
+      { "x": 0.40, "y": 0.48, "w": 0.20, "h": 0.18, "symbolId": "pid_heat_exchanger", "note": "증기와 공정 유체가 열을 주고받는 열교환기입니다." },
+      { "x": 0.55, "y": 0.72, "w": 0.12, "h": 0.18, "symbolId": "pid_steam_trap", "note": "증기는 막고 응축수만 배출하는 스팀 트랩입니다." },
+      { "x": 0.72, "y": 0.72, "w": 0.12, "h": 0.18, "symbolId": "pid_sight_glass", "note": "응축수 흐름·증기 누설을 눈으로 확인하는 사이트글래스입니다." }
+    ],
+    "steps": [
+      { "text": "컨트롤 밸브가 증기 공급량을 조절합니다.", "hotspot": 0 },
+      { "text": "열교환기에서 증기가 공정 유체를 가열합니다.", "hotspot": 1 },
+      { "text": "가열로 생긴 응축수는 스팀 트랩으로만 배출됩니다(증기 회수).", "hotspot": 2 },
+      { "text": "사이트글래스로 증기 누설(연속 흐름) 여부를 확인합니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "pid_sample6",
+    "domain": "pid",
+    "title": "공기 압축기 계통",
+    "asset": "assets/diagrams/pid_sample6.svg",
+    "description": "흡입 공기를 필터로 거른 뒤 압축기로 승압하고, 체크 밸브를 지나 리시버(용기)에 저장하며 안전 밸브로 과압을 방출합니다.",
+    "hotspots": [
+      { "x": 0.16, "y": 0.28, "w": 0.12, "h": 0.22, "symbolId": "pid_filter", "note": "흡입 공기의 이물질을 거르는 필터입니다." },
+      { "x": 0.32, "y": 0.26, "w": 0.16, "h": 0.26, "symbolId": "pid_compressor", "note": "공기를 압축해 승압하는 압축기입니다." },
+      { "x": 0.50, "y": 0.30, "w": 0.11, "h": 0.18, "symbolId": "pid_check_valve", "note": "압축 공기의 역류를 막는 체크 밸브입니다." },
+      { "x": 0.66, "y": 0.28, "w": 0.16, "h": 0.46, "symbolId": "pid_vessel", "note": "압축 공기를 저장·완충하는 리시버(용기)입니다." },
+      { "x": 0.64, "y": 0.04, "w": 0.14, "h": 0.18, "symbolId": "pid_relief_valve", "note": "리시버 과압 시 압력을 방출하는 안전 밸브(PSV)입니다." }
+    ],
+    "steps": [
+      { "text": "흡입 공기를 필터로 걸러 이물질을 제거합니다.", "hotspot": 0 },
+      { "text": "압축기가 공기를 압축해 압력을 높입니다.", "hotspot": 1 },
+      { "text": "체크 밸브가 압축 공기의 역류를 막습니다.", "hotspot": 2 },
+      { "text": "압축 공기를 리시버(용기)에 저장·완충합니다.", "hotspot": 3 },
+      { "text": "안전 밸브가 과압 시 압력을 방출합니다.", "hotspot": 4 }
+    ]
+  },
+  {
+    "id": "pid_sample7",
+    "domain": "pid",
+    "title": "열교환기 3방 바이패스 온도 제어",
+    "asset": "assets/diagrams/pid_sample7.svg",
+    "description": "3방 밸브가 유체를 열교환기와 바이패스로 나눠 흘리고, 온도 계기(TIC)가 혼합 출구 온도에 따라 밸브 개도를 제어합니다.",
+    "hotspots": [
+      { "x": 0.13, "y": 0.52, "w": 0.13, "h": 0.20, "symbolId": "pid_centrifugal_pump", "note": "유체를 이송하는 펌프입니다." },
+      { "x": 0.34, "y": 0.50, "w": 0.14, "h": 0.22, "symbolId": "pid_three_way_valve", "note": "유체를 열교환기와 바이패스로 분배하는 3방 밸브입니다." },
+      { "x": 0.60, "y": 0.28, "w": 0.18, "h": 0.18, "symbolId": "pid_heat_exchanger", "note": "유체를 가열/냉각하는 열교환기입니다." },
+      { "x": 0.74, "y": 0.18, "w": 0.13, "h": 0.22, "symbolId": "pid_instrument", "note": "혼합 출구 온도를 감지해 3방 밸브를 제어하는 계기(TIC)입니다." }
+    ],
+    "steps": [
+      { "text": "펌프가 유체를 이송합니다.", "hotspot": 0 },
+      { "text": "3방 밸브가 일부는 열교환기로, 일부는 바이패스로 나눠 보냅니다.", "hotspot": 1 },
+      { "text": "열교환기를 지난 유체가 가열/냉각됩니다.", "hotspot": 2 },
+      { "text": "계기(TIC)가 혼합 출구 온도에 따라 3방 밸브 개도를 조절합니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "hvac_sample1",
+    "domain": "hvac",
+    "title": "스프링클러 · 공조 계통 예시",
+    "asset": "assets/diagrams/hvac_sample1.svg",
+    "description": "천장 소화 배관의 알람 밸브와 스프링클러 헤드, 그리고 급기 디퓨저를 함께 나타낸 예시입니다.",
+    "hotspots": [
+      { "x": 0.10, "y": 0.15, "w": 0.13, "h": 0.20, "symbolId": "hvac_alarm_valve", "note": "물이 흐르면 화재 경보를 울리는 알람 밸브입니다." },
+      { "x": 0.39, "y": 0.25, "w": 0.12, "h": 0.20, "symbolId": "hvac_sprinkler_head", "note": "열을 감지해 물을 분사하는 스프링클러 헤드입니다." },
+      { "x": 0.69, "y": 0.25, "w": 0.12, "h": 0.20, "symbolId": "hvac_sprinkler_head", "note": "일정 간격으로 배치되는 스프링클러 헤드입니다." },
+      { "x": 0.42, "y": 0.67, "w": 0.16, "h": 0.24, "symbolId": "hvac_diffuser", "note": "냉난방 공기를 실내로 취출하는 급기 디퓨저입니다." }
+    ],
+    "steps": [
+      { "text": "습식 배관에서 물이 흐르면 알람 밸브가 경보를 울립니다.", "hotspot": 0 },
+      { "text": "화재 시 스프링클러 헤드가 열을 감지해 방수합니다.", "hotspot": 1 },
+      { "text": "헤드는 일정 간격으로 배치되어 넓은 면적을 담당합니다.", "hotspot": 2 },
+      { "text": "한편 공조 디퓨저는 실내에 냉난방 공기를 공급합니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "hvac_sample2",
+    "domain": "hvac",
+    "title": "스프링클러 가지배관 계통",
+    "asset": "assets/diagrams/hvac_sample2.svg",
+    "description": "알람 밸브가 달린 입상관에서 가지배관으로 물이 공급되고, 여러 스프링클러 헤드가 배치된 습식 소화 계통입니다.",
+    "hotspots": [
+      { "x": 0.11, "y": 0.73, "w": 0.14, "h": 0.20, "symbolId": "hvac_alarm_valve", "note": "유수를 감지해 화재 경보를 울리는 알람 밸브입니다." },
+      { "x": 0.11, "y": 0.44, "w": 0.12, "h": 0.16, "symbolId": "bld_gate_valve", "note": "계통을 급수/차단하는 개폐표시형 밸브입니다." },
+      { "x": 0.31, "y": 0.25, "w": 0.12, "h": 0.20, "symbolId": "hvac_sprinkler_head", "note": "열을 감지해 방수하는 스프링클러 헤드입니다." },
+      { "x": 0.54, "y": 0.25, "w": 0.12, "h": 0.20, "symbolId": "hvac_sprinkler_head", "note": "가지배관을 따라 일정 간격으로 배치됩니다." },
+      { "x": 0.76, "y": 0.25, "w": 0.12, "h": 0.20, "symbolId": "hvac_sprinkler_head", "note": "말단 헤드까지 규정 방수압을 확보해야 합니다." }
+    ],
+    "steps": [
+      { "text": "습식 배관에 물이 차 있고 알람 밸브가 흐름을 감시합니다.", "hotspot": 0 },
+      { "text": "개폐표시형 밸브로 계통을 급수/차단합니다.", "hotspot": 1 },
+      { "text": "화재 시 열을 받은 헤드가 터지며 방수합니다.", "hotspot": 2 },
+      { "text": "물이 흐르면 알람 밸브가 감지해 경보를 울립니다.", "hotspot": 0 }
+    ]
+  },
+  {
+    "id": "hvac_sample3",
+    "domain": "hvac",
+    "title": "공조기(AHU) 급기 계통 (심화)",
+    "asset": "assets/diagrams/hvac_sample3.svg",
+    "description": "공조기(AHU)가 처리한 공기를 덕트로 보내 댐퍼·VAV로 풍량을 조절하고 디퓨저로 취출, 리턴 그릴로 회수하는 변풍량 공조 계통입니다.",
+    "hotspots": [
+      { "x": 0.03, "y": 0.38, "w": 0.25, "h": 0.24, "symbolId": "hvac_ahu", "note": "공기를 정화·냉난방해 급기하는 공조기(AHU)입니다." },
+      { "x": 0.32, "y": 0.42, "w": 0.11, "h": 0.16, "symbolId": "hvac_damper", "note": "덕트 풍량을 조절하는 댐퍼입니다." },
+      { "x": 0.51, "y": 0.42, "w": 0.15, "h": 0.16, "symbolId": "hvac_vav", "note": "존별 부하에 맞춰 풍량을 자동 조절하는 VAV 박스입니다." },
+      { "x": 0.70, "y": 0.60, "w": 0.13, "h": 0.22, "symbolId": "hvac_diffuser", "note": "실내에 공기를 고르게 취출하는 디퓨저입니다." },
+      { "x": 0.34, "y": 0.74, "w": 0.12, "h": 0.16, "symbolId": "hvac_return_grille", "note": "실내 공기를 회수해 AHU로 돌려보내는 리턴 그릴입니다." }
+    ],
+    "steps": [
+      { "text": "공조기(AHU)가 공기를 정화·냉난방해 급기합니다.", "hotspot": 0 },
+      { "text": "댐퍼로 덕트 풍량을 조절합니다.", "hotspot": 1 },
+      { "text": "VAV 박스가 존별 부하에 맞춰 풍량을 자동 조절합니다.", "hotspot": 2 },
+      { "text": "디퓨저로 실내에 공기를 고르게 취출합니다.", "hotspot": 3 },
+      { "text": "실내 공기는 리턴 그릴로 회수되어 AHU로 돌아갑니다.", "hotspot": 4 }
+    ]
+  },
+  {
+    "id": "hvac_sample4",
+    "domain": "hvac",
+    "title": "급배기 환기 계통",
+    "asset": "assets/diagrams/hvac_sample4.svg",
+    "description": "급기 팬이 신선 공기를 실내로 넣고, 배기 팬이 오염 공기를 밖으로 빼내는 환기 계통입니다.",
+    "hotspots": [
+      { "x": 0.11, "y": 0.16, "w": 0.14, "h": 0.22, "symbolId": "hvac_fan", "note": "외기를 실내로 공급하는 급기 팬입니다." },
+      { "x": 0.56, "y": 0.34, "w": 0.12, "h": 0.18, "symbolId": "hvac_diffuser", "note": "신선 공기를 실내로 취출하는 디퓨저입니다." },
+      { "x": 0.20, "y": 0.67, "w": 0.13, "h": 0.16, "symbolId": "hvac_return_grille", "note": "오염된 실내 공기를 모으는 리턴 그릴입니다." },
+      { "x": 0.75, "y": 0.63, "w": 0.14, "h": 0.22, "symbolId": "hvac_fan", "note": "실내 공기를 밖으로 배출하는 배기 팬입니다." }
+    ],
+    "steps": [
+      { "text": "급기 팬이 외기를 실내로 공급합니다.", "hotspot": 0 },
+      { "text": "급기 디퓨저로 신선 공기가 취출됩니다.", "hotspot": 1 },
+      { "text": "오염된 실내 공기는 리턴 그릴로 모입니다.", "hotspot": 2 },
+      { "text": "배기 팬이 실내 공기를 밖으로 배출합니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "hvac_sample5",
+    "domain": "hvac",
+    "title": "시스템 에어컨 (실외기·FCU) 계통",
+    "asset": "assets/diagrams/hvac_sample5.svg",
+    "description": "실외기가 냉매를 압축·응축해 각 실의 팬코일 유닛(FCU)에 분배하고, 온도 조절기가 실내 온도를 제어합니다.",
+    "hotspots": [
+      { "x": 0.04, "y": 0.38, "w": 0.24, "h": 0.26, "symbolId": "hvac_condensing_unit", "note": "냉매를 압축·응축하는 실외기입니다." },
+      { "x": 0.50, "y": 0.16, "w": 0.24, "h": 0.20, "symbolId": "hvac_fcu", "note": "실내를 직접 냉난방하는 팬코일 유닛(FCU)입니다." },
+      { "x": 0.50, "y": 0.63, "w": 0.24, "h": 0.20, "symbolId": "hvac_fcu", "note": "다른 실에 설치된 또 하나의 FCU입니다." },
+      { "x": 0.78, "y": 0.16, "w": 0.11, "h": 0.22, "symbolId": "hvac_thermostat", "note": "실내 온도를 감지해 FCU를 제어하는 온도 조절기입니다." }
+    ],
+    "steps": [
+      { "text": "실외기가 냉매를 압축·응축합니다.", "hotspot": 0 },
+      { "text": "냉매관으로 각 실의 FCU에 분배합니다.", "hotspot": 1 },
+      { "text": "FCU가 실내 공기를 직접 냉난방합니다.", "hotspot": 2 },
+      { "text": "온도 조절기가 설정 온도에 맞춰 FCU를 제어합니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "hvac_sample6",
+    "domain": "hvac",
+    "title": "자동화재탐지·소화 계통",
+    "asset": "assets/diagrams/hvac_sample6.svg",
+    "description": "감지기가 화재를 탐지하고, 스프링클러(알람 밸브+헤드)가 자동 방수하며, 옥내 소화전·소화기로 수동 진압하는 소방 종합 구성입니다.",
+    "hotspots": [
+      { "x": 0.18, "y": 0.06, "w": 0.12, "h": 0.22, "symbolId": "hvac_detector", "note": "화재의 열·연기를 감지해 경보하는 감지기입니다." },
+      { "x": 0.48, "y": 0.16, "w": 0.12, "h": 0.20, "symbolId": "hvac_sprinkler_head", "note": "열을 감지해 자동 방수하는 스프링클러 헤드입니다." },
+      { "x": 0.10, "y": 0.48, "w": 0.16, "h": 0.20, "symbolId": "hvac_alarm_valve", "note": "유수를 감지해 화재 경보를 울리는 알람 밸브입니다." },
+      { "x": 0.55, "y": 0.58, "w": 0.14, "h": 0.26, "symbolId": "hvac_fire_hydrant", "note": "사람이 호스로 방수하는 옥내 소화전입니다." },
+      { "x": 0.78, "y": 0.58, "w": 0.11, "h": 0.26, "symbolId": "hvac_fire_extinguisher", "note": "초기 화재를 직접 진압하는 소화기입니다." }
+    ],
+    "steps": [
+      { "text": "감지기가 화재의 열·연기를 탐지해 경보합니다.", "hotspot": 0 },
+      { "text": "열을 받은 스프링클러 헤드가 자동으로 방수합니다.", "hotspot": 1 },
+      { "text": "물이 흐르면 알람 밸브가 감지해 경보를 울립니다.", "hotspot": 2 },
+      { "text": "필요 시 옥내 소화전으로 사람이 직접 방수합니다.", "hotspot": 3 },
+      { "text": "초기 화재는 소화기로 즉시 진압합니다.", "hotspot": 4 }
+    ]
+  },
+  {
+    "id": "hvac_sample7",
+    "domain": "hvac",
+    "title": "프리액션(준비작동식) 소화 계통",
+    "asset": "assets/diagrams/hvac_sample7.svg",
+    "description": "감지기 신호로 프리액션 밸브가 먼저 열려 배관에 물을 채우고, 헤드까지 개방돼야 방수하는 이중 조건 방식(수손 방지)입니다.",
+    "hotspots": [
+      { "x": 0.06, "y": 0.70, "w": 0.14, "h": 0.22, "symbolId": "hvac_osy_valve", "note": "급수를 차단하는 개폐표시형(OS&Y) 밸브입니다. 항상 개방·감시합니다." },
+      { "x": 0.18, "y": 0.68, "w": 0.16, "h": 0.24, "symbolId": "hvac_preaction_valve", "note": "감지기 신호로 열려 배관에 물을 채우는 프리액션 밸브입니다." },
+      { "x": 0.50, "y": 0.05, "w": 0.12, "h": 0.20, "symbolId": "hvac_detector", "note": "화재를 감지해 프리액션 밸브에 신호를 보내는 감지기입니다." },
+      { "x": 0.44, "y": 0.24, "w": 0.12, "h": 0.20, "symbolId": "hvac_sprinkler_head", "note": "폐쇄형 스프링클러 헤드입니다." },
+      { "x": 0.71, "y": 0.24, "w": 0.12, "h": 0.20, "symbolId": "hvac_sprinkler_head", "note": "헤드까지 개방돼야 실제 방수됩니다." }
+    ],
+    "steps": [
+      { "text": "OS&Y 밸브로 급수하며 항상 개방 상태를 감시합니다.", "hotspot": 0 },
+      { "text": "감지기가 화재를 감지해 프리액션 밸브에 신호를 보냅니다.", "hotspot": 2 },
+      { "text": "프리액션 밸브가 열려 배관에 물을 채웁니다(준비 상태).", "hotspot": 1 },
+      { "text": "헤드까지 열려야 방수 — 감지+헤드 이중 조건으로 오작동 수손을 막습니다.", "hotspot": 3 }
+    ]
+  },
+  {
+    "id": "hvac_sample8",
+    "domain": "hvac",
+    "title": "변유량(VAV) 공조 계통",
+    "asset": "assets/diagrams/hvac_sample8.svg",
+    "description": "AHU 코일의 전동 2방 밸브가 냉수 유량을 조절하고, VAV 박스가 존별 풍량을 조절하며, 온도 조절기가 이를 제어하는 변유량 시스템입니다.",
+    "hotspots": [
+      { "x": 0.04, "y": 0.36, "w": 0.24, "h": 0.24, "symbolId": "hvac_ahu", "note": "공기를 냉난방·급기하는 공조기(AHU)입니다." },
+      { "x": 0.05, "y": 0.62, "w": 0.14, "h": 0.26, "symbolId": "hvac_two_way_valve", "note": "코일 냉수 유량을 조절하는 전동 2방 밸브입니다(변유량)." },
+      { "x": 0.51, "y": 0.42, "w": 0.16, "h": 0.18, "symbolId": "hvac_vav", "note": "존별 부하에 맞춰 풍량을 자동 조절하는 VAV 박스입니다." },
+      { "x": 0.70, "y": 0.60, "w": 0.13, "h": 0.22, "symbolId": "hvac_diffuser", "note": "실내로 공기를 취출하는 디퓨저입니다." },
+      { "x": 0.78, "y": 0.20, "w": 0.11, "h": 0.22, "symbolId": "hvac_thermostat", "note": "실내 온도로 VAV·밸브를 제어하는 온도 조절기입니다." }
+    ],
+    "steps": [
+      { "text": "AHU가 공기를 냉난방해 급기합니다.", "hotspot": 0 },
+      { "text": "코일의 전동 2방 밸브가 냉수 유량을 조절합니다(변유량).", "hotspot": 1 },
+      { "text": "VAV 박스가 존별 부하에 맞춰 풍량을 조절합니다.", "hotspot": 2 },
+      { "text": "디퓨저로 실내에 공기를 취출합니다.", "hotspot": 3 },
+      { "text": "온도 조절기가 실내 온도에 맞춰 VAV·밸브를 제어합니다.", "hotspot": 4 }
+    ]
+  }
+]

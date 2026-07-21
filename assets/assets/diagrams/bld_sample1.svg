@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect x="0" y="0" width="400" height="300" fill="#ffffff"/>
+  <g fill="none" stroke="#111827" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 급수 본관 -->
+    <line x1="20" y1="150" x2="380" y2="150"/>
+    <polygon points="118,144 118,156 130,150" fill="#111827" stroke="none"/>
+    <polygon points="290,144 290,156 302,150" fill="#111827" stroke="none"/>
+    <text x="20" y="135" font-size="14" fill="#374151" stroke="none">급수원</text>
+
+    <!-- ① 게이트 밸브 @x=80 -->
+    <polygon points="64,138 64,162 80,150"/>
+    <polygon points="96,138 96,162 80,150"/>
+
+    <!-- ② 스트레이너 @x=160 -->
+    <line x1="150" y1="150" x2="168" y2="172"/>
+    <line x1="144" y1="146" x2="160" y2="168" stroke-width="2"/>
+    <line x1="150" y1="144" x2="166" y2="166" stroke-width="2"/>
+
+    <!-- ③ 펌프 @x=250 -->
+    <circle cx="250" cy="150" r="22"/>
+    <line x1="250" y1="128" x2="234" y2="114"/>
+    <line x1="250" y1="128" x2="266" y2="114"/>
+
+    <!-- ④ 체크 밸브 @x=330 -->
+    <polygon points="314,138 314,162 338,150" fill="#111827"/>
+    <line x1="342" y1="134" x2="342" y2="166"/>
+
+    <!-- 분기 티 (기구로 상승) -->
+    <line x1="200" y1="150" x2="200" y2="90"/>
+    <line x1="180" y1="90" x2="220" y2="90"/>
+  </g>
+</svg>

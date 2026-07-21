@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
+  <g fill="none" stroke="#111827" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="20" y1="48" x2="80" y2="48"/>
+    <line x1="50" y1="48" x2="50" y2="26"/>
+    <path d="M42,26 a8,8 0 0 1 16,0"/>
+    <text x="50" y="16" font-size="13" text-anchor="middle" fill="#111827" stroke="none">CO</text>
+  </g>
+</svg>

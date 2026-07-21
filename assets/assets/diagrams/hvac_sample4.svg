@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect x="0" y="0" width="400" height="300" fill="#ffffff"/>
+  <g fill="none" stroke="#111827" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 급기(SA) 계통 -->
+    <text x="30" y="45" font-size="12" fill="#374151" stroke="none">급기(SA)</text>
+    <circle cx="70" cy="80" r="18"/>
+    <path d="M70,80 C60,68 80,68 70,80 C80,92 60,92 70,80" fill="#111827" stroke="none"/>
+    <line x1="88" y1="80" x2="300" y2="80"/>
+    <polygon points="170,74 170,86 182,80" fill="#111827" stroke="none"/>
+    <!-- 급기 디퓨저 -->
+    <line x1="250" y1="80" x2="250" y2="108"/>
+    <rect x="234" y="108" width="32" height="32"/>
+    <line x1="234" y1="108" x2="266" y2="140"/>
+    <line x1="266" y1="108" x2="234" y2="140"/>
+
+    <!-- 배기(EA) 계통 -->
+    <text x="30" y="205" font-size="12" fill="#374151" stroke="none">배기(EA)</text>
+    <line x1="60" y1="225" x2="300" y2="225"/>
+    <polygon points="200,219 200,231 212,225" fill="#111827" stroke="none"/>
+    <!-- 리턴 그릴 @ (110,225) -->
+    <rect x="90" y="208" width="40" height="34"/>
+    <line x1="90" y1="219" x2="130" y2="219"/>
+    <line x1="90" y1="230" x2="130" y2="230"/>
+    <!-- 방화/풍량 댐퍼 @ (200,225) -->
+    <rect x="186" y="211" width="28" height="28"/>
+    <line x1="190" y1="237" x2="210" y2="213"/>
+    <!-- 배기 팬 @ (330,225) -->
+    <circle cx="330" cy="225" r="18"/>
+    <path d="M330,225 C320,213 340,213 330,225 C340,237 320,237 330,225" fill="#111827" stroke="none"/>
+  </g>
+</svg>

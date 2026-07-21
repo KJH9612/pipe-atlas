@@ -1,0 +1,564 @@
+[
+  {
+    "id": "b1", "domain": "building", "prompt": "이 기호의 명칭은?",
+    "asset": "assets/symbols/bld_gate_valve.svg",
+    "options": ["게이트 밸브", "글로브 밸브", "체크 밸브", "볼 밸브"],
+    "answer": 0,
+    "explanation": "나비넥타이(bowtie) 형상은 게이트 밸브입니다. 주로 완전 개폐(차단)용으로 씁니다."
+  },
+  {
+    "id": "b2", "domain": "building", "prompt": "이 기호의 명칭은?",
+    "asset": "assets/symbols/bld_check_valve.svg",
+    "options": ["게이트 밸브", "체크 밸브", "리듀서", "스트레이너"],
+    "answer": 1,
+    "explanation": "삼각형이 흐름 방향을 가리키며 역류를 막는 체크 밸브입니다."
+  },
+  {
+    "id": "b3", "domain": "building", "prompt": "가운데 채워진 원이 있는 이 밸브는?",
+    "asset": "assets/symbols/bld_globe_valve.svg",
+    "options": ["볼 밸브", "게이트 밸브", "글로브 밸브", "체크 밸브"],
+    "answer": 2,
+    "explanation": "구형 몸체를 상징하는 글로브 밸브로, 유량 조절에 적합합니다."
+  },
+  {
+    "id": "b4", "domain": "building", "prompt": "이 이음쇠의 명칭은?",
+    "asset": "assets/symbols/bld_tee.svg",
+    "options": ["엘보", "티(T)", "크로스", "리듀서"],
+    "answer": 1,
+    "explanation": "세 방향으로 분기하는 T자형 이음쇠, 티입니다."
+  },
+  {
+    "id": "b5", "domain": "building", "prompt": "배관 지름을 바꿀 때 쓰는 이음쇠는?",
+    "asset": "assets/symbols/bld_reducer.svg",
+    "options": ["리듀서", "엘보", "티", "크로스"],
+    "answer": 0,
+    "explanation": "관경이 다른 배관을 잇는 리듀서(축소관)입니다."
+  },
+  {
+    "id": "b6", "domain": "building", "prompt": "펌프 토출측에서 역류를 막기 위해 설치하는 밸브는?",
+    "asset": null,
+    "options": ["게이트 밸브", "체크 밸브", "볼 밸브", "글로브 밸브"],
+    "answer": 1,
+    "explanation": "체크 밸브는 한 방향 흐름만 허용하므로 펌프 정지 시 역류를 막습니다."
+  },
+  {
+    "id": "b7", "domain": "building", "prompt": "이 기호는 무엇일까요?",
+    "asset": "assets/symbols/bld_pump.svg",
+    "options": ["송풍기", "펌프", "스트레이너", "용기"],
+    "answer": 1,
+    "explanation": "원 안 임펠러 형상은 유체를 가압·이송하는 펌프입니다."
+  },
+  {
+    "id": "b8", "domain": "building", "prompt": "게이트 밸브의 올바른 사용법은?",
+    "asset": null,
+    "options": ["유량을 미세 조절하기 위해 반쯤 열어 사용", "완전히 열거나 닫는 차단용으로 사용", "역류 방지 전용으로 사용", "이물질 여과용으로 사용"],
+    "answer": 1,
+    "explanation": "게이트 밸브는 완전 개폐(차단)용입니다. 반개 상태 사용은 권장되지 않습니다."
+  },
+  {
+    "id": "b9", "domain": "building", "prompt": "유입구와 유출구가 90°를 이루는 이 밸브는?",
+    "asset": "assets/symbols/bld_angle_valve.svg",
+    "options": ["앵글 밸브", "게이트 밸브", "체크 밸브", "버터플라이 밸브"],
+    "answer": 0,
+    "explanation": "흐름을 직각으로 꺾으며 조절하는 앵글 밸브입니다. 밸브와 엘보 역할을 겸합니다."
+  },
+  {
+    "id": "b10", "domain": "building", "prompt": "원판형 디스크를 90° 돌려 여닫는 이 밸브는?",
+    "asset": "assets/symbols/bld_butterfly_valve.svg",
+    "options": ["버터플라이 밸브", "볼 밸브", "글로브 밸브", "앵글 밸브"],
+    "answer": 0,
+    "explanation": "얇고 가벼워 대구경에 유리한 버터플라이 밸브입니다."
+  },
+  {
+    "id": "b11", "domain": "building", "prompt": "위쪽 스프링이 그려진 이 밸브의 역할은?",
+    "asset": "assets/symbols/bld_relief_valve.svg",
+    "options": ["설정 압력 초과 시 자동 배출(안전 밸브)", "역류 방지", "유량 분배", "이물질 여과"],
+    "answer": 0,
+    "explanation": "안전(릴리프) 밸브는 과압 시 스프링을 이기고 열려 압력을 배출합니다."
+  },
+  {
+    "id": "b12", "domain": "building", "prompt": "고층 건물 하층부의 과도한 급수 압력을 낮추는 밸브는?",
+    "asset": "assets/symbols/bld_prv.svg",
+    "options": ["감압 밸브(PRV)", "체크 밸브", "게이트 밸브", "안전 밸브"],
+    "answer": 0,
+    "explanation": "감압 밸브는 1차측 고압을 2차측 설정 압력으로 낮춰 유지합니다."
+  },
+  {
+    "id": "b13", "domain": "building", "prompt": "너트를 풀어 소구경 배관을 분리·재결합하는 이음쇠는?",
+    "asset": "assets/symbols/bld_union.svg",
+    "options": ["유니언", "플랜지", "캡", "리듀서"],
+    "answer": 0,
+    "explanation": "유니언은 나사 배관의 분해 지점에 쓰는 이음쇠입니다."
+  },
+  {
+    "id": "b14", "domain": "building", "prompt": "원판을 볼트로 맞물려 대구경 배관을 잇는 이음은?",
+    "asset": "assets/symbols/bld_flange.svg",
+    "options": ["플랜지", "유니언", "엘보", "티"],
+    "answer": 0,
+    "explanation": "플랜지는 볼트 체결로 대구경·고압 배관을 분해 가능하게 연결합니다."
+  },
+  {
+    "id": "b15", "domain": "building", "prompt": "이 배수 부속의 이름과 기능으로 옳은 것은?",
+    "asset": "assets/symbols/bld_p_trap.svg",
+    "options": ["P 트랩 - 봉수로 악취 차단", "리듀서 - 관경 변경", "캡 - 배관 마감", "유니언 - 배관 분리"],
+    "answer": 0,
+    "explanation": "P 트랩은 U자에 고인 물(봉수)로 하수 냄새와 해충의 실내 유입을 막습니다."
+  },
+  {
+    "id": "b16", "domain": "building", "prompt": "P 트랩의 '봉수'가 마르면 생기는 문제는?",
+    "asset": null,
+    "options": ["하수구 악취가 실내로 올라온다", "수압이 높아진다", "물이 역류한다", "배관이 얼어붙는다"],
+    "answer": 0,
+    "explanation": "봉수가 증발하면 악취 차단 기능이 사라져 하수 냄새가 실내로 유입됩니다."
+  },
+  {
+    "id": "b17", "domain": "building", "prompt": "이 기호는 무엇일까요?",
+    "asset": "assets/symbols/bld_pressure_gauge.svg",
+    "options": ["압력계", "온도계", "펌프", "계기(밸브)"],
+    "answer": 0,
+    "explanation": "원형 눈금판에 바늘로 압력을 지시하는 압력계입니다."
+  },
+  {
+    "id": "b18", "domain": "building", "prompt": "배관 끝을 막아 마감하는 이음쇠는?",
+    "asset": "assets/symbols/bld_cap.svg",
+    "options": ["캡", "엘보", "티", "유니언"],
+    "answer": 0,
+    "explanation": "캡은 관 끝에 씌워 유체가 새지 않게 마감하는 이음쇠입니다."
+  },
+
+  {
+    "id": "p1", "domain": "pid", "prompt": "위쪽 돔(다이어프램)이 달린 이 밸브는?",
+    "asset": "assets/symbols/pid_control_valve.svg",
+    "options": ["수동 게이트 밸브", "컨트롤 밸브", "체크 밸브", "볼 밸브"],
+    "answer": 1,
+    "explanation": "다이어프램 액추에이터가 신호로 개도를 조절하는 컨트롤 밸브입니다."
+  },
+  {
+    "id": "p2", "domain": "pid", "prompt": "원(풍선) 기호가 나타내는 것은?",
+    "asset": "assets/symbols/pid_instrument.svg",
+    "options": ["펌프", "계기(Instrument)", "용기", "밸브"],
+    "answer": 1,
+    "explanation": "원은 계기를 뜻하며, 안에 태그(PT, FIC 등)를 적습니다."
+  },
+  {
+    "id": "p3", "domain": "pid", "prompt": "캡슐 형상의 이 기호는?",
+    "asset": "assets/symbols/pid_vessel.svg",
+    "options": ["용기/탱크", "펌프", "계기", "밸브"],
+    "answer": 0,
+    "explanation": "유체를 저장·분리하는 용기(드럼/탱크)입니다."
+  },
+  {
+    "id": "p4", "domain": "pid", "prompt": "이 기호의 명칭은?",
+    "asset": "assets/symbols/pid_centrifugal_pump.svg",
+    "options": ["원심 펌프", "송풍기", "압축기", "용기"],
+    "answer": 0,
+    "explanation": "흡입은 축 방향, 토출은 접선 방향으로 표현한 원심 펌프입니다."
+  },
+  {
+    "id": "p5", "domain": "pid", "prompt": "P&ID의 정식 명칭으로 옳은 것은?",
+    "asset": null,
+    "options": ["배관 계장도(Piping & Instrumentation Diagram)", "공정 흐름도(PFD)", "배치도(Plot Plan)", "전개도"],
+    "answer": 0,
+    "explanation": "P&ID는 배관 계장도로, 배관과 계기·제어를 상세히 표시합니다."
+  },
+  {
+    "id": "p6", "domain": "pid", "prompt": "계기 원 안에 적는 'PT'가 의미하는 것에 가장 가까운 것은?",
+    "asset": null,
+    "options": ["압력 전송기(Pressure Transmitter)", "펌프 테스트", "배관 두께", "온도계"],
+    "answer": 0,
+    "explanation": "PT는 Pressure Transmitter(압력 전송기)를 뜻하는 계기 태그입니다."
+  },
+
+  {
+    "id": "h1", "domain": "hvac", "prompt": "이 소화 설비 기호는?",
+    "asset": "assets/symbols/hvac_sprinkler_head.svg",
+    "options": ["디퓨저", "스프링클러 헤드", "댐퍼", "송풍기"],
+    "answer": 1,
+    "explanation": "열을 감지해 물을 분사하는 스프링클러 헤드입니다."
+  },
+  {
+    "id": "h2", "domain": "hvac", "prompt": "덕트 안 날개로 풍량을 조절하는 이 장치는?",
+    "asset": "assets/symbols/hvac_damper.svg",
+    "options": ["디퓨저", "댐퍼", "필터", "팬"],
+    "answer": 1,
+    "explanation": "블레이드를 회전시켜 풍량을 조절·차단하는 댐퍼입니다."
+  },
+  {
+    "id": "h3", "domain": "hvac", "prompt": "천장에서 공기를 실내로 취출하는 이 기구는?",
+    "asset": "assets/symbols/hvac_diffuser.svg",
+    "options": ["디퓨저", "스프링클러", "댐퍼", "용기"],
+    "answer": 0,
+    "explanation": "공기를 실내로 고르게 분산·취출하는 디퓨저입니다."
+  },
+  {
+    "id": "h4", "domain": "hvac", "prompt": "이 기호의 명칭은?",
+    "asset": "assets/symbols/hvac_fan.svg",
+    "options": ["펌프", "송풍기/팬", "댐퍼", "계기"],
+    "answer": 1,
+    "explanation": "공기를 이송·순환시키는 송풍기(팬)입니다."
+  },
+  {
+    "id": "h5", "domain": "hvac", "prompt": "습식 스프링클러에서 물 흐름을 감지해 경보를 울리는 밸브는?",
+    "asset": "assets/symbols/hvac_alarm_valve.svg",
+    "options": ["알람 밸브", "게이트 밸브", "댐퍼", "디퓨저"],
+    "answer": 0,
+    "explanation": "유수를 검지해 화재 경보를 발하는 알람 밸브입니다."
+  },
+  {
+    "id": "h6", "domain": "hvac", "prompt": "방화 구획 관통부에서 화재 확산을 막기 위해 쓰는 것은?",
+    "asset": null,
+    "options": ["방화 댐퍼", "디퓨저", "스프링클러", "송풍기"],
+    "answer": 0,
+    "explanation": "방화 댐퍼는 화재 시 닫혀 덕트를 통한 화염·연기 확산을 막습니다."
+  },
+
+  {
+    "id": "b19", "domain": "building", "prompt": "펌프 흡입관 맨 아래에서 마중물이 빠지지 않게 하는 것은?",
+    "asset": "assets/symbols/bld_foot_valve.svg",
+    "options": ["풋 밸브", "체크 밸브", "스트레이너", "게이트 밸브"],
+    "answer": 0,
+    "explanation": "풋 밸브는 흡입관 말단의 체크+여과 일체형으로, 정지 시 흡입관의 물을 유지합니다."
+  },
+  {
+    "id": "b20", "domain": "building", "prompt": "온도 변화에 따른 배관의 신축을 흡수하는 이음은?",
+    "asset": "assets/symbols/bld_expansion_joint.svg",
+    "options": ["신축 이음", "유니언", "플랜지", "리듀서"],
+    "answer": 0,
+    "explanation": "신축 이음(벨로우즈)은 열팽창·수축을 흡수해 응력·파손을 막습니다."
+  },
+  {
+    "id": "b21", "domain": "building", "prompt": "난방 배관 최상부에 고인 공기를 자동 배출하는 것은?",
+    "asset": "assets/symbols/bld_air_vent.svg",
+    "options": ["자동 공기빼기 밸브", "안전 밸브", "감압 밸브", "체크 밸브"],
+    "answer": 0,
+    "explanation": "공기빼기 밸브(에어벤트)는 공기 고임으로 인한 순환 불량을 막습니다."
+  },
+  {
+    "id": "b22", "domain": "building", "prompt": "배수관 막힘 시 청소도구를 넣기 위한 마개는?",
+    "asset": "assets/symbols/bld_cleanout.svg",
+    "options": ["청소구(CO)", "바닥 배수구", "P 트랩", "캡"],
+    "answer": 0,
+    "explanation": "청소구(CO)는 배수관 굴곡·합류부에 두어 막힘 청소를 쉽게 합니다."
+  },
+  {
+    "id": "b23", "domain": "building", "prompt": "사용한 물의 누적 유량을 표시하는 계기는?",
+    "asset": "assets/symbols/bld_water_meter.svg",
+    "options": ["수도 계량기", "압력계", "온도계", "스트레이너"],
+    "answer": 0,
+    "explanation": "수도 계량기는 적산 유량을 표시하며 흐름 방향대로 설치합니다."
+  },
+  {
+    "id": "bd1", "domain": "building", "prompt": "이 가압 급수 계통에서 펌프 정지 시 물의 역류를 막는 기호의 역할은?",
+    "asset": "assets/diagrams/bld_sample3.svg",
+    "options": ["역류 방지(체크 밸브)", "유량 조절", "이물질 여과", "압력 감압"],
+    "answer": 0,
+    "explanation": "펌프 토출측 체크 밸브가 정지 시 역류·수격을 막습니다."
+  },
+
+  {
+    "id": "p7", "domain": "pid", "prompt": "이 P&ID 기호의 명칭은?",
+    "asset": "assets/symbols/pid_check_valve.svg",
+    "options": ["체크 밸브", "게이트 밸브", "컨트롤 밸브", "글로브 밸브"],
+    "answer": 0,
+    "explanation": "삼각형이 허용 흐름 방향을 가리키는 체크 밸브입니다."
+  },
+  {
+    "id": "p8", "domain": "pid", "prompt": "설정 압력 초과 시 자동 개방해 유체를 방출하는 안전장치는?",
+    "asset": "assets/symbols/pid_relief_valve.svg",
+    "options": ["안전 밸브(PSV)", "컨트롤 밸브", "체크 밸브", "감압 밸브"],
+    "answer": 0,
+    "explanation": "PSV는 과압을 자동 방출하는 공정 안전의 핵심 장치입니다. 전후 차단밸브를 잠그면 안 됩니다."
+  },
+  {
+    "id": "p9", "domain": "pid", "prompt": "두 유체 사이에서 열을 주고받게 하는 기기는?",
+    "asset": "assets/symbols/pid_heat_exchanger.svg",
+    "options": ["열교환기", "펌프", "용기", "컬럼"],
+    "answer": 0,
+    "explanation": "열교환기는 쉘 안의 튜브로 가열·냉각·응축을 수행합니다."
+  },
+  {
+    "id": "p10", "domain": "pid", "prompt": "기·액 접촉으로 성분을 분리하는 탑은?",
+    "asset": "assets/symbols/pid_column.svg",
+    "options": ["컬럼(증류탑)", "열교환기", "용기", "펌프"],
+    "answer": 0,
+    "explanation": "컬럼(타워)은 내부 트레이에서 기·액을 접촉시켜 성분을 분리합니다."
+  },
+  {
+    "id": "pd1", "domain": "pid", "prompt": "이 계통에서 출구 온도에 따라 냉각수량을 조절하는 것은?",
+    "asset": "assets/diagrams/pid_sample3.svg",
+    "options": ["컨트롤 밸브", "펌프", "열교환기", "게이트 밸브"],
+    "answer": 0,
+    "explanation": "온도계기(TIC) 신호를 받은 컨트롤 밸브가 냉각수량을 조절합니다."
+  },
+
+  {
+    "id": "h7", "domain": "hvac", "prompt": "필터·코일·팬으로 공기를 처리해 급기하는 기기는?",
+    "asset": "assets/symbols/hvac_ahu.svg",
+    "options": ["공조기(AHU)", "송풍기", "냉각 코일", "VAV 박스"],
+    "answer": 0,
+    "explanation": "AHU는 정화·냉난방·가습·송풍을 하나로 묶은 중앙식 공조기입니다."
+  },
+  {
+    "id": "h8", "domain": "hvac", "prompt": "실내 부하에 따라 급기 풍량을 자동 조절하는 말단 유닛은?",
+    "asset": "assets/symbols/hvac_vav.svg",
+    "options": ["VAV 박스", "디퓨저", "댐퍼", "리턴 그릴"],
+    "answer": 0,
+    "explanation": "VAV 박스는 존별 부하에 맞춰 풍량을 변화시켜 에너지를 절감합니다."
+  },
+  {
+    "id": "h9", "domain": "hvac", "prompt": "사람이 호스로 직접 방수해 초기 진화하는 설비는?",
+    "asset": "assets/symbols/hvac_fire_hydrant.svg",
+    "options": ["옥내 소화전", "스프링클러", "알람 밸브", "디퓨저"],
+    "answer": 0,
+    "explanation": "옥내 소화전은 수동 방수 설비로, 자동인 스프링클러와 대비됩니다."
+  },
+  {
+    "id": "h10", "domain": "hvac", "prompt": "공기를 냉각·제습하는 열교환 코일은?",
+    "asset": "assets/symbols/hvac_cooling_coil.svg",
+    "options": ["냉각 코일", "댐퍼", "디퓨저", "팬"],
+    "answer": 0,
+    "explanation": "냉각 코일은 냉수·냉매와 열교환해 공기를 냉각·제습하며, 응축수 배수가 필요합니다."
+  },
+  {
+    "id": "hd1", "domain": "hvac", "prompt": "이 공조 계통에서 존별 풍량을 자동 조절하는 것은?",
+    "asset": "assets/diagrams/hvac_sample3.svg",
+    "options": ["VAV 박스", "디퓨저", "AHU", "리턴 그릴"],
+    "answer": 0,
+    "explanation": "VAV 박스가 존별 부하에 맞춰 급기 풍량을 조절합니다."
+  },
+
+  {
+    "id": "b24", "domain": "building", "prompt": "냉온수를 섞거나 유로를 전환하는, 세 방향 유로 밸브는?",
+    "asset": "assets/symbols/bld_three_way_valve.svg",
+    "options": ["게이트 밸브", "3방 밸브", "콕", "체크 밸브"],
+    "answer": 1,
+    "explanation": "3방 밸브는 세 포트로 유로를 전환·혼합·분배합니다(난방 혼합밸브 등)."
+  },
+  {
+    "id": "b25", "domain": "building", "prompt": "전기 신호(코일)로 자동 개폐하는 밸브는?",
+    "asset": "assets/symbols/bld_solenoid_valve.svg",
+    "options": ["볼 밸브", "안전 밸브", "전자(솔레노이드) 밸브", "콕"],
+    "answer": 2,
+    "explanation": "솔레노이드 코일의 자기력으로 개폐합니다. 정전 시 안전측 거동(NO/NC)을 선정합니다."
+  },
+  {
+    "id": "b26", "domain": "building", "prompt": "플러그를 90° 돌려 여닫는 소구경 차단 밸브는?",
+    "asset": "assets/symbols/bld_cock.svg",
+    "options": ["콕(플러그 밸브)", "글로브 밸브", "리듀서", "유니언"],
+    "answer": 0,
+    "explanation": "콕은 원뿔/원통 플러그를 1/4턴 돌려 개폐하는 소구경 밸브입니다."
+  },
+  {
+    "id": "b27", "domain": "building", "prompt": "같은 굵기의 직관을 일직선으로 잇는 이음쇠는?",
+    "asset": "assets/symbols/bld_coupling.svg",
+    "options": ["엘보", "티", "리듀서", "커플링(소켓)"],
+    "answer": 3,
+    "explanation": "커플링(소켓)은 직관 연장용이며, 분해가 필요하면 유니언을 씁니다."
+  },
+  {
+    "id": "b28", "domain": "building", "prompt": "배수 트랩이 내장된 대표 위생기구는?",
+    "asset": "assets/symbols/bld_water_closet.svg",
+    "options": ["대변기", "세면기", "바닥 배수구", "청소구"],
+    "answer": 0,
+    "explanation": "대변기는 봉수 트랩이 기구에 내장되며, 굵은 배수관경과 통기가 중요합니다."
+  },
+  {
+    "id": "b29", "domain": "building", "prompt": "급수전으로 물을 받아 손·얼굴을 씻는 위생기구는?",
+    "asset": "assets/symbols/bld_lavatory.svg",
+    "options": ["대변기", "세면기", "물탱크", "팽창 탱크"],
+    "answer": 1,
+    "explanation": "세면기는 급수전+하부 P트랩(또는 병트랩)으로 구성됩니다."
+  },
+  {
+    "id": "b30", "domain": "building", "prompt": "급수를 저장하는 저수조/고가수조 기호는?",
+    "asset": "assets/symbols/bld_water_tank.svg",
+    "options": ["물탱크(저수조)", "팽창 탱크", "펌프", "스트레이너"],
+    "answer": 0,
+    "explanation": "지하 저수조(펌프 흡입원)·옥상 고가수조(중력 급수원)로 쓰입니다."
+  },
+  {
+    "id": "b31", "domain": "building", "prompt": "난방수가 데워져 팽창할 때 부피 증가를 흡수해 과압을 막는 것은?",
+    "asset": "assets/symbols/bld_expansion_tank.svg",
+    "options": ["물탱크", "스트레이너", "팽창 탱크", "감압 밸브"],
+    "answer": 2,
+    "explanation": "팽창 탱크가 제 기능을 못하면 안전밸브가 자주 방출됩니다."
+  },
+
+  {
+    "id": "p11", "domain": "pid", "prompt": "빠른 1/4턴 차단에 쓰는 P&ID 밸브는?",
+    "asset": "assets/symbols/pid_ball_valve.svg",
+    "options": ["볼 밸브", "게이트 밸브", "글로브 밸브", "체크 밸브"],
+    "answer": 0,
+    "explanation": "볼 밸브는 빠른 차단·기밀성이 우수하나 정밀 조절엔 부적합합니다."
+  },
+  {
+    "id": "p12", "domain": "pid", "prompt": "대구경 라인 차단·조절에 경제적인 원판형 밸브는?",
+    "asset": "assets/symbols/pid_butterfly_valve.svg",
+    "options": ["안전 밸브", "버터플라이 밸브", "볼 밸브", "리듀서"],
+    "answer": 1,
+    "explanation": "버터플라이 밸브는 얇고 가벼워 대구경에 경제적입니다."
+  },
+  {
+    "id": "p13", "domain": "pid", "prompt": "기체를 압축해 승압·이송하는 기기는?",
+    "asset": "assets/symbols/pid_compressor.svg",
+    "options": ["펌프", "압축기", "용기", "열교환기"],
+    "answer": 1,
+    "explanation": "펌프는 액체, 압축기는 기체를 승압합니다. 원심형은 서징 관리가 필요합니다."
+  },
+  {
+    "id": "p14", "domain": "pid", "prompt": "토출측을 잠근 채 운전하면 과압 위험이 큰, 정량·고압 용적식 펌프는?",
+    "asset": "assets/symbols/pid_reciprocating_pump.svg",
+    "options": ["원심 펌프", "왕복동 펌프", "송풍기", "압축기"],
+    "answer": 1,
+    "explanation": "용적식(왕복동) 펌프 토출측엔 반드시 안전 밸브를 둡니다."
+  },
+  {
+    "id": "p15", "domain": "pid", "prompt": "미세 입자를 걸러 기기를 보호하는(스트레이너보다 정밀한) 것은?",
+    "asset": "assets/symbols/pid_filter.svg",
+    "options": ["필터", "오리피스", "사이트글래스", "리듀서"],
+    "answer": 0,
+    "explanation": "스트레이너=거친 이물질, 필터=미세 입자로 정밀도가 다릅니다."
+  },
+  {
+    "id": "p16", "domain": "pid", "prompt": "배관에 판을 끼워 발생하는 차압으로 유량을 재는 요소는?",
+    "asset": "assets/symbols/pid_orifice.svg",
+    "options": ["오리피스", "스팀트랩", "체크 밸브", "용기"],
+    "answer": 0,
+    "explanation": "오리피스 양측 압력탭을 차압전송기(dP)로 읽어 유량을 환산합니다."
+  },
+  {
+    "id": "p17", "domain": "pid", "prompt": "증기는 막고 응축수만 자동 배출하는 부속은?",
+    "asset": "assets/symbols/pid_steam_trap.svg",
+    "options": ["감압 밸브", "스팀 트랩", "사이트글래스", "필터"],
+    "answer": 1,
+    "explanation": "스팀 트랩은 응축수만 배출해 증기를 회수하며, 고장 시 워터해머·증기 손실을 유발합니다."
+  },
+  {
+    "id": "p18", "domain": "pid", "prompt": "배관 내 흐름·기포를 눈으로 확인하는 관측창은?",
+    "asset": "assets/symbols/pid_sight_glass.svg",
+    "options": ["오리피스", "사이트 글래스", "스팀 트랩", "계기"],
+    "answer": 1,
+    "explanation": "사이트 글래스로 스팀트랩 후단의 증기 누설(연속 흐름) 여부 등을 확인합니다."
+  },
+
+  {
+    "id": "h11", "domain": "hvac", "prompt": "냉·온수 코일과 소형 팬으로 실별 냉난방하는 유닛은?",
+    "asset": "assets/symbols/hvac_fcu.svg",
+    "options": ["팬코일 유닛(FCU)", "공조기(AHU)", "냉각탑", "VAV 박스"],
+    "answer": 0,
+    "explanation": "FCU는 실내기 개념이며, 신선 외기는 별도 환기로 공급해야 합니다."
+  },
+  {
+    "id": "h12", "domain": "hvac", "prompt": "냉동기(칠러)의 응축열을 대기로 방출하는 기기는?",
+    "asset": "assets/symbols/hvac_cooling_tower.svg",
+    "options": ["냉각탑", "실외기", "가습기", "송풍기"],
+    "answer": 0,
+    "explanation": "냉각탑은 냉각수를 증발 냉각시켜 응축열을 버리며, 수질(레지오넬라) 관리가 필수입니다."
+  },
+  {
+    "id": "h13", "domain": "hvac", "prompt": "압축기·응축코일·팬을 담은 시스템 에어컨의 실외 유닛은?",
+    "asset": "assets/symbols/hvac_condensing_unit.svg",
+    "options": ["실외기(응축유닛)", "FCU", "AHU", "냉각탑"],
+    "answer": 0,
+    "explanation": "실외기(응축)와 실내기(FCU/카세트)를 냉매관으로 연결합니다."
+  },
+  {
+    "id": "h14", "domain": "hvac", "prompt": "공조기 입구에서 먼지를 거르는 주름형 여과재는?",
+    "asset": "assets/symbols/hvac_air_filter.svg",
+    "options": ["에어 필터", "디퓨저", "댐퍼", "가습기"],
+    "answer": 0,
+    "explanation": "프리필터로 큰 먼지를, 고효율(HEPA) 필터로 미세먼지를 처리(다단)합니다."
+  },
+  {
+    "id": "h15", "domain": "hvac", "prompt": "겨울철 건조를 막기 위해 공기에 수분을 더하는 장치는?",
+    "asset": "assets/symbols/hvac_humidifier.svg",
+    "options": ["송풍기", "냉각 코일", "가습기", "필터"],
+    "answer": 2,
+    "explanation": "가습기는 실내 습도를 높이며, 수질·과가습(결로) 관리가 필요합니다."
+  },
+  {
+    "id": "h16", "domain": "hvac", "prompt": "화재의 열·연기를 감지해 수신기에 신호를 보내는 것은?",
+    "asset": "assets/symbols/hvac_detector.svg",
+    "options": ["화재 감지기", "스프링클러 헤드", "소화기", "알람 밸브"],
+    "answer": 0,
+    "explanation": "열감지기(온도)·연기감지기(광전)를 설치 장소 특성에 맞게 선정합니다."
+  },
+  {
+    "id": "h17", "domain": "hvac", "prompt": "초기 화재를 사람이 직접 진압하는 휴대식 기구는?",
+    "asset": "assets/symbols/hvac_fire_extinguisher.svg",
+    "options": ["소화기", "옥내 소화전", "스프링클러", "감지기"],
+    "answer": 0,
+    "explanation": "ABC 분말소화기가 일반 건물 표준이며, 보행거리 기준마다 비치합니다."
+  },
+  {
+    "id": "h18", "domain": "hvac", "prompt": "실내 온도를 감지해 냉난방 기기를 제어하는 조절기는?",
+    "asset": "assets/symbols/hvac_thermostat.svg",
+    "options": ["온도 조절기(서모스탯)", "댐퍼", "디퓨저", "VAV 박스"],
+    "answer": 0,
+    "explanation": "서모스탯 설정온도로 FCU·VAV의 풍량/밸브를 제어합니다. 직사·열원 옆 설치는 피합니다."
+  },
+
+  {
+    "id": "b32", "domain": "building", "prompt": "고무 격막으로 유로를 막아 슬러리·위생(식품·제약) 배관에 강한 밸브는?",
+    "asset": "assets/symbols/bld_diaphragm_valve.svg",
+    "options": ["다이어프램 밸브", "글로브 밸브", "게이트 밸브", "볼 밸브"],
+    "answer": 0,
+    "explanation": "다이어프램 밸브는 데드존이 적어 위생적이고 부식성·슬러리에 강합니다(격막은 소모품)."
+  },
+  {
+    "id": "b33", "domain": "building", "prompt": "바늘형 스템으로 미세 유량을 정밀 조절하는 소구경 밸브는?",
+    "asset": "assets/symbols/bld_needle_valve.svg",
+    "options": ["볼 밸브", "니들 밸브", "버터플라이 밸브", "콕"],
+    "answer": 1,
+    "explanation": "니들 밸브는 계기 앞 소유량 정밀 조절에 쓰이며 대유량엔 부적합합니다."
+  },
+  {
+    "id": "b34", "domain": "building", "prompt": "고무 슬리브를 눌러 개폐해 분체·슬러리·마모성 유체에 강한 밸브는?",
+    "asset": "assets/symbols/bld_pinch_valve.svg",
+    "options": ["핀치 밸브", "체크 밸브", "게이트 밸브", "안전 밸브"],
+    "answer": 0,
+    "explanation": "핀치 밸브는 유로에 슬리브만 닿아 막힘이 없고 마모성 유체에 강합니다."
+  },
+  {
+    "id": "b35", "domain": "building", "prompt": "부구로 수위를 감지해 자동으로 급수를 여닫는 밸브는?",
+    "asset": "assets/symbols/bld_float_valve.svg",
+    "options": ["감압 밸브", "볼탭(플로트 밸브)", "전동 밸브", "니들 밸브"],
+    "answer": 1,
+    "explanation": "볼탭은 저수조·변기 탱크의 정수위를 무동력으로 유지합니다."
+  },
+  {
+    "id": "b36", "domain": "building", "prompt": "모터로 원격·자동 개폐하는 대구경 밸브(상단 M)는?",
+    "asset": "assets/symbols/bld_motor_valve.svg",
+    "options": ["전동 밸브", "전자(솔레노이드) 밸브", "밸런싱 밸브", "콕"],
+    "answer": 0,
+    "explanation": "빠른 ON/OFF는 전자(솔레노이드), 대구경·원격 조절은 전동(모터) 밸브를 씁니다."
+  },
+  {
+    "id": "b37", "domain": "building", "prompt": "계통별 유량을 설계값으로 균등 배분(프리셋)하는 밸브는?",
+    "asset": "assets/symbols/bld_balancing_valve.svg",
+    "options": ["밸런싱 밸브", "안전 밸브", "3방 밸브", "체크 밸브"],
+    "answer": 0,
+    "explanation": "특정 층·말단만 냉난방이 약하면 밸런싱(유량 균형) 불량을 의심합니다."
+  },
+  {
+    "id": "p22", "domain": "pid", "prompt": "세 포트로 유로를 전환·혼합하는 P&ID 밸브는?",
+    "asset": "assets/symbols/pid_three_way_valve.svg",
+    "options": ["3방 밸브", "체크 밸브", "게이트 밸브", "안전 밸브"],
+    "answer": 0,
+    "explanation": "열교환기 바이패스 온도 제어 등에서 3방 컨트롤 밸브가 유로를 분배·혼합합니다."
+  },
+  {
+    "id": "p23", "domain": "pid", "prompt": "전자 코일로 개폐하는 ON/OFF·인터록용 밸브는?",
+    "asset": "assets/symbols/pid_solenoid_valve.svg",
+    "options": ["컨트롤 밸브", "전자(솔레노이드) 밸브", "니들 밸브", "볼 밸브"],
+    "answer": 1,
+    "explanation": "연속 조절은 컨트롤 밸브, ON/OFF·안전 인터록 차단은 전자(솔레노이드) 밸브입니다."
+  },
+  {
+    "id": "p24", "domain": "pid", "prompt": "계기 임펄스 라인의 격리·미세 조절에 쓰는 밸브는?",
+    "asset": "assets/symbols/pid_needle_valve.svg",
+    "options": ["니들 밸브", "버터플라이 밸브", "3방 밸브", "용기"],
+    "answer": 0,
+    "explanation": "니들 밸브는 소유량 정밀 조절·격리에 적합해 계기 임펄스 라인에 흔합니다."
+  }
+]
